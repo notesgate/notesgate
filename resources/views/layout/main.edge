@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Hello NotesGate</title>
+	{{ style('assets/theme/css/bootstrap.css') }}
+	{{ style('assets/global/css/app.css') }}
+	{{ style('assets/global/css/component.css') }}
+
+
+	{{ style('assets/components/leftbar/css/style-app.css') }}
+	{{ style('assets/components/searchbar/css/searchbar.css') }}
+	{{ style('assets/global/css/media.css') }}
+
+</head>
+
+<body>
+	<div id=web-content class="wrapper">
+		<nav id="sidebar" class="active">
+			<div class="sidebar-header">
+				<h3>Bootstrap Sidebar</h3>
+				<strong>BS</strong>
+			</div>
+
+			<ul class="list-unstyled">
+				<li>
+					<a href="#">
+						<i class="fas fa-briefcase"></i>
+						About
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fas fa-image"></i>
+						Portfolio
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fas fa-question"></i>
+						FAQ
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fas fa-paper-plane"></i>
+						Contact
+					</a>
+				</li>
+			</ul>
+		</nav>
+		@!section('content')
+
+	</div>
+
+	{{ script('assets/theme/js/jquery-3.js') }}
+	{{ script('assets/theme/js/bootstrap.js') }}
+	{{ script('assets/components/searchbar/js/searchbar.js') }}
+
+</body>
+
+</html>
