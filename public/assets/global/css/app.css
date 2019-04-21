@@ -6,6 +6,16 @@
 	margin: auto;
 }
 
+.text-align-center {
+	text-align: center;
+}
+
+.color-white {
+	background-color: #fafafa !important;
+}
+
+
+
 #content-page {
 	margin-top: 5%;
 }

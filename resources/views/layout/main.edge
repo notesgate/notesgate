@@ -12,7 +12,7 @@
 	{{ style('assets/components/leftbar/css/style-app.css') }}
 	{{ style('assets/components/searchbar/css/searchbar.css') }}
 	{{ style('assets/global/css/media.css') }}
-
+	@!section('style')
 </head>
 
 <body>
@@ -57,6 +57,7 @@
 	{{ script('assets/theme/js/jquery-3.js') }}
 	{{ script('assets/theme/js/bootstrap.js') }}
 	{{ script('assets/components/searchbar/js/searchbar.js') }}
+	@!section('script')
 
 </body>
 

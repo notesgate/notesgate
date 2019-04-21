@@ -1,70 +1,81 @@
 @layout('layout.main')
+@section('style')
+{{ style('assets/components/right-menu/css/right-menu.css') }}
+{{ style('assets/components/button/css/circle.css') }}
+@endsection
+
 @section('content')
 <div id="content">
 	<div class="col-lg-8 col-md-10 col-sm-10 align-center">
-		<div class="jumbotron">
+		<div class="jumbotron color-white">
 			<h1 class="display-4">Hello, world!</h1>
 			<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
 				to
 				featured content or information.</p>
 			<hr class="my-4">
 			<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-			<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+			<button type="button" id="sidebarCollapse" class="btn btn-info">
+				<span>Toggle Sidebar</span>
+			</button>
 		</div>
-		<div class="jumbotron">
-			<h1 class="display-4">Hello, world!</h1>
-			<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-				to
-				featured content or information.</p>
-			<hr class="my-4">
-			<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-			<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+		<div class="col-lg-12 text-align-center">
+			<div class="btn-group" role="group" aria-label="Basic example">
+				<button type="button" class="btn-circle-100 btn-secondary">Left</button>
+				<button type="button" class="btn-circle-100 btn-secondary">Middle</button>
+				<button type="button" class="btn-circle-100 btn-secondary">Middle</button>
+				<button type="button" class="btn-circle-100 btn-secondary">Middle</button>
+				<button type="button" class="btn-circle-100 btn-secondary">Right</button>
+			</div>
 		</div>
-		<div class="jumbotron">
-			<h1 class="display-4">Hello, world!</h1>
-			<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-				to
-				featured content or information.</p>
-			<hr class="my-4">
-			<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-			<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-		</div>
-		<div class="jumbotron">
-			<h1 class="display-4">Hello, world!</h1>
-			<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-				to
-				featured content or information.</p>
-			<hr class="my-4">
-			<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-			<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-		</div>
-		<div class="jumbotron">
-			<h1 class="display-4">Hello, world!</h1>
-			<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-				to
-				featured content or information.</p>
-			<hr class="my-4">
-			<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-			<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-		</div>
-		<div class="jumbotron">
-			<h1 class="display-4">Hello, world!</h1>
-			<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-				to
-				featured content or information.</p>
-			<hr class="my-4">
-			<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-			<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-		</div>
-		<div class="jumbotron">
-			<h1 class="display-4">Hello, world!</h1>
-			<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-				to
-				featured content or information.</p>
-			<hr class="my-4">
-			<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-			<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-		</div>
+
 	</div>
+
+	<nav id="right-menu">
+		<div id="dismiss">
+			<i class="glyphicon glyphicon-arrow-left"></i>
+		</div>
+
+		<div class="sidebar-header">
+			<h3>Bootstrap Sidebar</h3>
+		</div>
+
+		<ul class="list-unstyled components">
+			<p>Dummy Heading</p>
+			<li class="active">
+				<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+				<ul class="collapse list-unstyled" id="homeSubmenu">
+					<li><a href="#">Home 1</a></li>
+					<li><a href="#">Home 2</a></li>
+					<li><a href="#">Home 3</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">About</a>
+				<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+				<ul class="collapse list-unstyled" id="pageSubmenu">
+					<li><a href="#">Page 1</a></li>
+					<li><a href="#">Page 2</a></li>
+					<li><a href="#">Page 3</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Portfolio</a>
+			</li>
+			<li>
+				<a href="#">Contact</a>
+			</li>
+		</ul>
+
+		<ul class="list-unstyled CTAs">
+			<li><a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a></li>
+			<li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a></li>
+		</ul>
+	</nav>
+
 </div>
+
+@endsection
+
+@section('script')
+{{ script('assets/components/right-menu/js/right-menu.js') }}
 @endsection
