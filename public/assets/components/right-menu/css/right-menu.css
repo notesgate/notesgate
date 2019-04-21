@@ -1,0 +1,21 @@
+#right-menu {
+	right: -15%;
+	top: 0px;
+	position: fixed;
+	width: 15%;
+	height: 100vh;
+	transition: right 0.5s;
+	background-color: rgb(228, 14, 14);
+}
+
+@media (min-width: 240px) {
+	#right-menu {
+		width: 20%;
+	}
+}
+
+@media (min-width: 960px) {
+	#right-menu {
+		width: 15%;
+	}
+}
