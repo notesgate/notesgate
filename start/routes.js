@@ -19,4 +19,5 @@ const Route = use('Route')
 Route.on('/').render('user.home')
 Route.on('/board').render('user.board')
 Route.on('/notes').render('user.notes')
-Route.on('/note').render('user.note')
+Route.get('/note/read', 'NoteController.readNote');
+// Route.on('/note').render('user.note')
