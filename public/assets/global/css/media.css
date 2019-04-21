@@ -129,3 +129,47 @@
 }
 
 /* end card coloum post  --------------------------- */
+
+
+
+/* card coloumn board */
+
+@media (min-width: 240px) {
+	.board-user {
+		max-width: 85%;
+		margin: auto;
+	}
+}
+
+@media (min-width: 360px) {
+	.board-user {
+		max-width: 50%;
+		margin: 0;
+	}
+}
+
+@media (min-width: 560px) {
+	.board-user {
+		max-width: 33%;
+		margin: 0;
+
+	}
+}
+
+@media (min-width: 720px) {
+	.board-user {
+		max-width: 25%;
+		margin: 0;
+
+	}
+}
+
+@media (min-width: 960px) {
+	.board-user {
+		max-width: 20%;
+		margin: 0;
+
+	}
+}
+
+/* end card coloumn board */
