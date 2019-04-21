@@ -1,0 +1,69 @@
+.btn-circle-100 {
+	width: 65px;
+	height: 65px;
+	text-align: center;
+	padding: 6px 0;
+	font-size: 12px;
+	line-height: 1.42;
+	border-radius: 50%;
+}
+
+@media (min-width: 240px) {
+	.btn-circle-100 {
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		padding: 6px 0;
+		font-size: 12px;
+		line-height: 1.42;
+		border-radius: 50%;
+	}
+}
+
+@media (min-width: 360px) {
+	.btn-circle-100 {
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		padding: 6px 0;
+		font-size: 12px;
+		line-height: 1.42;
+		border-radius: 50%;
+	}
+}
+
+@media (min-width: 460px) {
+	.btn-circle-100 {
+		width: 45px;
+		height: 45px;
+		text-align: center;
+		padding: 6px 0;
+		font-size: 12px;
+		line-height: 1.42;
+		border-radius: 50%;
+	}
+}
+
+@media (min-width: 640px) {
+	.btn-circle-100 {
+		width: 55px;
+		height: 55px;
+		text-align: center;
+		padding: 6px 0;
+		font-size: 12px;
+		line-height: 1.42;
+		border-radius: 50%;
+	}
+}
+
+@media (min-width: 960px) {
+	.btn-circle-100 {
+		width: 65px;
+		height: 65px;
+		text-align: center;
+		padding: 6px 0;
+		font-size: 12px;
+		line-height: 1.42;
+		border-radius: 50%;
+	}
+}
