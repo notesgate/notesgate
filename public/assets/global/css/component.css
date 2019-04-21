@@ -1,3 +1,9 @@
 .padding-left-auto {
 	padding-left: 150px;
 }
+
+#content {
+	width: 95%;
+
+	margin-left: auto;
+}

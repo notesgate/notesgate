@@ -1,0 +1,12 @@
+#searchbar {
+	position: fixed;
+	/* Make it stick/fixed */
+	top: 0;
+
+	z-index: 100;
+	transition: top 0.5s;
+}
+
+.display-none {
+	display: none;
+}
