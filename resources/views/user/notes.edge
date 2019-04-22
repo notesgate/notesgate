@@ -6,7 +6,7 @@
 	<div id="content-page" class="container-fluid">
 		<div class="col-lg-12">
 			<div class="card-columns">
-				<div class="card">
+				<div id="note-1" data-note='{"id":"1","text":"1"}' onclick="read(this)" class="card">
 					<svg class="bd-placeholder-img card-img-top" width="100%" height="160"
 						xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
 						role="img" aria-label="Placeholder: Image cap">
@@ -22,7 +22,7 @@
 							additional content. This content is a little bit longer.</p>
 					</div>
 				</div>
-				<div class="card p-3">
+				<div id="note-2" data-note='{"id":"1","text":"1"}' onclick="read(this)" class="card p-3">
 					<blockquote class="blockquote mb-0 card-body">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
 						</p>
@@ -33,7 +33,7 @@
 						</footer>
 					</blockquote>
 				</div>
-				<div class="card">
+				<div id="note-3" data-note='{"id":"1","text":"1"}' onclick="read(this)" class="card">
 					<svg class="bd-placeholder-img card-img-top" width="100%" height="160"
 						xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
 						role="img" aria-label="Placeholder: Image cap">
@@ -49,7 +49,8 @@
 						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 					</div>
 				</div>
-				<div class="card bg-primary text-white text-center p-3">
+				<div id="note-4" data-note='{"id":"1","text":"1"}' onclick="read(this)"
+					class="card bg-primary text-white text-center p-3">
 					<blockquote class="blockquote mb-0">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
 						<footer class="blockquote-footer text-white">
@@ -59,7 +60,7 @@
 						</footer>
 					</blockquote>
 				</div>
-				<div class="card text-center">
+				<div id="note-5" data-note='{"id":"1","text":"1"}' onclick="read(this)" class="card text-center">
 					<div class="card-body">
 						<h5 class="card-title">Card title</h5>
 						<p class="card-text">This card has a regular title and short paragraphy of text below
@@ -68,7 +69,7 @@
 						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 					</div>
 				</div>
-				<div class="card">
+				<div id="note-6" data-note='{"id":"1","text":"1"}' onclick="read(this)" class="card">
 					<svg class="bd-placeholder-img card-img" width="100%" height="260"
 						xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
 						role="img" aria-label="Placeholder: Card image">
@@ -77,7 +78,7 @@
 							dy=".3em">Card image</text>
 					</svg>
 				</div>
-				<div class="card p-3 text-right">
+				<div id="note-7" data-note='{"id":"1","text":"1"}' onclick="read(this)" class="card p-3 text-right">
 					<blockquote class="blockquote mb-0">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
 						</p>
@@ -88,7 +89,7 @@
 						</footer>
 					</blockquote>
 				</div>
-				<div class="card">
+				<div id="note-8" data-note='{"id":"1","text":"1"}' onclick="read(this)" class="card">
 					<svg class="bd-placeholder-img card-img" width="100%" height="260"
 						xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
 						role="img" aria-label="Placeholder: Card image">
@@ -97,7 +98,7 @@
 							dy=".3em">Card image</text>
 					</svg>
 				</div>
-				<div class="card p-3 text-right">
+				<div id="note-9" data-note='{"id":"1","text":"1"}' onclick="read(this)" class="card p-3 text-right">
 					<blockquote class="blockquote mb-0">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
 						</p>
@@ -108,9 +109,13 @@
 						</footer>
 					</blockquote>
 				</div>
-
 			</div>
 		</div>
 	</div>
 </div>
+@endsection
+
+@section('script')
+{{ script('assets/components/searchbar/js/searchbar.js') }}
+{{ script('assets/components/card-note/js/card-note.js') }}
 @endsection
