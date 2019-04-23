@@ -8,7 +8,7 @@
 <div id="content">
 	<div class="col-lg-8 col-md-10 col-sm-10 align-center">
 		<div class="jumbotron color-white">
-			<h1 class="text-content display-4" contenteditable="true">Title</h1>
+			<h1 class="text-content display-4 focus-content" contenteditable="true">Title</h1>
 			<p class="text-content lead" contenteditable="true">#lable</p>
 			<hr class="my-2">
 			<p class="text-content " contenteditable="true">Description</p>
@@ -58,5 +58,6 @@
 @endsection
 
 @section('script')
+{{ script('assets/components/right-menu/js/right-menu.js') }}
 {{ script('assets/components/right-menu/js/right-menu.js') }}
 @endsection
