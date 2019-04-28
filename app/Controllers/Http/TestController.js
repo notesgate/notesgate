@@ -12,7 +12,7 @@ class TestController {
 			password
 		} = request.only(['name', 'email', 'password']);
 
-		let data = { 'name': "zikri", 'email': "muammar.clasci@gmail.com", 'password': "kode-48MZA" };
+		let data = { 'name': "aksana", 'email': "muammar.clasci@gmail.com", 'password': "kode-48MZA" };
 		const user = await User.create({
 			data
 		});
@@ -20,13 +20,24 @@ class TestController {
 			message: "nize"
 		});
 	}
-	show({
-		params
+	async show({
+		params, response
 	}) {
-		return {
-			id: params.id
-		}
+		const data = await User.all();
 
+		return response.send({
+			data: data
+		});
+
+	}
+
+	async getOne({ params, response }) {
+		const user = await User.where({ name: params.params }).fetch()
+		console.log(params.params)
+
+		return response.send({
+			data: user
+		});
 	}
 }
 
