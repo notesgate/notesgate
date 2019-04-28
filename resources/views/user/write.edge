@@ -2,28 +2,39 @@
 @section('style')
 {{ style('assets/components/right-menu/css/right-menu.css') }}
 {{ style('assets/components/button/css/circle.css') }}
+{{ style('assets/components/note-write/css/note-write.css') }}
 @endsection
 
 @section('content')
 <div id="content">
 	<div class="col-lg-8 col-md-10 col-sm-10 align-center">
-		<div class="jumbotron color-white">
-			<h1 class="text-content display-4 focus-content" contenteditable="true">Title</h1>
-			<p class="text-content lead" contenteditable="true">#lable</p>
+		<div id=editor class="jumbotron color-white">
+			<h1 class="note title-note text-content display-4 focus-content" contenteditable="true" data-note="title">
+				Title</h1>
+			<p class="note lable-note text-content lead" contenteditable="true" data-note="lable">#lable</p>
 			<hr class="my-2">
-			<p class="text-content " contenteditable="true">Description</p>
-			<button type="button" id="sidebarCollapse" class="btn btn-info">
-				<span>Toggle Sidebar</span>
-			</button>
+			<p class="note decs-note text-content " contenteditable="true" data-note="desc">Description</p>
+			<div class="section">
+				<p class="note text-note text-content " contenteditable="true" data-note="section-text">Section</p>
+
+			</div>
 		</div>
 		<div class="col-lg-12 text-align-center">
 			<div class="btn-group" role="group" aria-label="Basic example">
-				<button type="button" class="btn-circle-100 btn-secondary">Left</button>
+				<button type="button" class="btn-circle-100 btn-secondary note-btn-section">section</button>
+				<button type="button" class="btn-circle-100 btn-secondary note-btn-image">image</button>
+				<!-- <button type="button" class="btn-circle-100 btn-secondary">Middle</button>
 				<button type="button" class="btn-circle-100 btn-secondary">Middle</button>
-				<button type="button" class="btn-circle-100 btn-secondary">Middle</button>
-				<button type="button" class="btn-circle-100 btn-secondary">Middle</button>
-				<button type="button" class="btn-circle-100 btn-secondary">Right</button>
+				<button type="button" class="btn-circle-100 btn-secondary">Right</button> -->
 			</div>
+		</div>
+		<div class="float-button-save col-md-8">
+			<button type="button" id="sidebarCollapse" class="btn btn-info">
+				<span>Toggle Sidebar</span>
+			</button>
+			<button type="button" id="buttonSave" class="btn btn-info">
+				<span>Save</span>
+			</button>
 		</div>
 
 	</div>
@@ -59,5 +70,5 @@
 
 @section('script')
 {{ script('assets/components/right-menu/js/right-menu.js') }}
-{{ script('assets/components/right-menu/js/right-menu.js') }}
+{{ script('assets/components/note-write/js/note-write.js') }}
 @endsection

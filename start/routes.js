@@ -16,11 +16,20 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.get('/', 'NoteController.getAllNote')
+Route.get('/', 'NoteController.all')
 Route.get('/board', 'BoardController.getAllBoard')
 Route.get('/write', 'NoteController.writeNote')
 
 
-Route.on('/notes').render('user.notes')
-Route.get('/note/read', 'NoteController.readNote')
+Route.group(() => {
+	Route.get('/write', 'NoteController.write')
+	Route.get('/read', 'NoteController.read')
+	Route.get('/get', 'NoteController.get')
+	Route.get('/all', 'NoteController.all')
+	Route.post('/save', 'NoteController.save')
+}).prefix('/note')
+
+
 Route.post('/test', 'TestController.index')
+Route.post('/show', 'TestController.show')
+Route.post('/getOne/:params', 'TestController.getOne')
