@@ -61,10 +61,10 @@ module.exports = {
     client: 'mongodb',
     connectionString: Env.get('DB_CONNECTION_STRING', ''),
     connection: {
-      host: Env.get('DB_HOST', 'localhost'),
+      host: Env.get('DB_HOST', '127.0.0.1'),
       port: Env.get('DB_PORT', 27017),
-      username: Env.get('DB_USER', 'admin'),
-      password: Env.get('DB_PASSWORD', ''),
+      username: Env.get('DB_USER', 'ppl'),
+      password: Env.get('DB_PASSWORD', 'ppl'),
       database: Env.get('DB_DATABASE', 'notesgate'),
       options: {
         // replicaSet: Env.get('DB_REPLICA_SET', '')
