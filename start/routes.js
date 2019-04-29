@@ -30,6 +30,16 @@ Route.group(() => {
 }).prefix('/note')
 
 
+Route.group(() => {
+	Route.get('/', 'LoginController.index')
+}).prefix('/login')
+
+
+Route.group(() => {
+	Route.get('/', 'RegisterController.create')
+	Route.post('/store', 'RegisterController.store').validator('Register')
+}).prefix('/register')
+
 Route.post('/test', 'TestController.index')
 Route.post('/show', 'TestController.show')
 Route.post('/getOne/:params', 'TestController.getOne')
