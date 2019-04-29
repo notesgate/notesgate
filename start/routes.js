@@ -32,6 +32,7 @@ Route.group(() => {
 
 Route.group(() => {
 	Route.get('/', 'LoginController.index')
+	Route.get('/store', 'LoginController.store')
 }).prefix('/login')
 
 
