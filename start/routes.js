@@ -16,30 +16,30 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.get('/', 'NoteController.all')
+Route.get('/', 'NoteController.all').as('root')
 Route.get('/board', 'BoardController.getAllBoard')
 Route.get('/write', 'NoteController.writeNote')
 
 
 Route.group(() => {
-	Route.get('/write', 'NoteController.write')
-	Route.get('/read', 'NoteController.read')
-	Route.get('/get', 'NoteController.get')
-	Route.get('/all', 'NoteController.all')
-	Route.post('/save', 'NoteController.save')
-}).prefix('/note')
+	Route.get('/note/write', 'NoteController.write')
+	Route.get('/note/read', 'NoteController.read')
+	Route.get('/note/get', 'NoteController.get')
+	Route.get('/note/all', 'NoteController.all')
+	Route.post('/note/save', 'NoteController.save')
+})
 
 
 Route.group(() => {
-	Route.get('/', 'LoginController.index')
-	Route.get('/store', 'LoginController.store')
-}).prefix('/login')
+	Route.get('/login', 'LoginController.index')
+	Route.post('/login/store', 'LoginController.store').validator('Login')
+})
 
 
 Route.group(() => {
-	Route.get('/', 'RegisterController.create')
-	Route.post('/store', 'RegisterController.store').validator('Register')
-}).prefix('/register')
+	Route.get('/register', 'RegisterController.create')
+	Route.post('/register/store', 'RegisterController.store').validator('Register')
+})
 
 Route.post('/test', 'TestController.index')
 Route.post('/show', 'TestController.show')
