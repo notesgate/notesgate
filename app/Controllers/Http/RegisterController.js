@@ -51,7 +51,6 @@ class RegisterController {
 
 		user.save()
 		session.flash({ type: 'info', message: 'This is the message' })
-
 		return response.redirect('/login')
 	}
 
