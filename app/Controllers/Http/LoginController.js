@@ -44,12 +44,15 @@ class LoginController {
 	 * @param {Response} ctx.response
 	 */
 	async store({ request, auth, session, response }) {
-
-		const user = await User.where({ email: request.input('email') }, { password: request.input('password') }).fetch()
+		const email = request.input('email')
+		const password = request.input('password')
+		const user = await User.where({ email: email }, { password: password }).fetch()
 		let data = user.toJSON();
 		if (data.length == 1) {
 			// TODO auth
-			await auth.attempt(request.all());
+			await auth.attempt(email, password);
+			console.log('to');
+			console.log(data);
 
 			return response.route('/');
 
