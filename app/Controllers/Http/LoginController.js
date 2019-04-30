@@ -43,7 +43,20 @@ class LoginController {
 	 * @param {Request} ctx.request
 	 * @param {Response} ctx.response
 	 */
-	async store({ request, session, response }) {
+	async store({ request, auth, session, response }) {
+
+		const user = await User.where({ email: request.input('email') }, { password: request.input('password') }).fetch()
+		let data = user.toJSON();
+		if (data.length == 1) {
+			// TODO auth
+			await auth.attempt(request.all());
+
+			return response.route('/');
+
+		}
+
+		session.flash({ type: 'info', message: 'This is the message' })
+		return response.redirect('back')
 
 	}
 

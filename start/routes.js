@@ -22,24 +22,25 @@ Route.get('/write', 'NoteController.writeNote').as('write')
 
 
 Route.group(() => {
-	Route.get('/note/write', 'NoteController.write')
-	Route.get('/note/read', 'NoteController.read')
-	Route.get('/note/get', 'NoteController.get')
-	Route.get('/note/all', 'NoteController.all')
-	Route.post('/note/save', 'NoteController.save')
-})
+	Route.get('/write', 'NoteController.write')
+	Route.get('/read', 'NoteController.read')
+	Route.get('/get', 'NoteController.get')
+	Route.get('/all', 'NoteController.all')
+	Route.post('/save', 'NoteController.save')
+}).prefix('/note')
 
 
 Route.group(() => {
-	Route.get('/login', 'LoginController.index')
-	Route.post('/login/store', 'LoginController.store').validator('Login')
-})
+	Route.get('/', 'LoginController.index')
+	Route.post('/store', 'LoginController.store').validator('Login')
+}).prefix('/login');
 
 
 Route.group(() => {
-	Route.get('/register', 'RegisterController.create')
-	Route.post('/register/store', 'RegisterController.store').validator('Register')
-})
+	Route.post('/store', 'RegisterController.store').validator('Register')
+}).prefix('/register');
+
+
 
 Route.post('/test', 'TestController.index')
 Route.post('/show', 'TestController.show')
