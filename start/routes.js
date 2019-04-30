@@ -16,11 +16,30 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.get('/', 'NoteController.getAllNote');
-Route.get('/board', 'BoardController.getAllBoard');
-Route.get('/write', 'NoteController.writeNote');
+Route.get('/', 'NoteController.all')
+Route.get('/board', 'BoardController.getAllBoard')
+Route.get('/write', 'NoteController.writeNote')
 
 
-Route.on('/notes').render('user.notes')
-Route.get('/note/read', 'NoteController.readNote');
-// Route.on('/note').render('user.note')
+Route.group(() => {
+	Route.get('/write', 'NoteController.write')
+	Route.get('/read', 'NoteController.read')
+	Route.get('/get', 'NoteController.get')
+	Route.get('/all', 'NoteController.all')
+	Route.post('/save', 'NoteController.save')
+}).prefix('/note')
+
+
+Route.group(() => {
+	Route.get('/', 'LoginController.index')
+}).prefix('/login')
+
+
+Route.group(() => {
+	Route.get('/', 'RegisterController.create')
+	Route.post('/store', 'RegisterController.store').validator('Register')
+}).prefix('/register')
+
+Route.post('/test', 'TestController.index')
+Route.post('/show', 'TestController.show')
+Route.post('/getOne/:params', 'TestController.getOne')
