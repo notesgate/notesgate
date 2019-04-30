@@ -16,9 +16,9 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.get('/', 'NoteController.all')
-Route.get('/board', 'BoardController.getAllBoard')
-Route.get('/write', 'NoteController.writeNote')
+Route.get('/', 'NoteController.all').as('notesGate')
+Route.get('/board', 'BoardController.getAllBoard').as('board')
+Route.get('/write', 'NoteController.writeNote').as('write')
 
 
 Route.group(() => {
@@ -32,13 +32,15 @@ Route.group(() => {
 
 Route.group(() => {
 	Route.get('/', 'LoginController.index')
-}).prefix('/login')
+	Route.post('/store', 'LoginController.store').validator('Login')
+}).prefix('/login');
 
 
 Route.group(() => {
-	Route.get('/', 'RegisterController.create')
 	Route.post('/store', 'RegisterController.store').validator('Register')
-}).prefix('/register')
+}).prefix('/register');
+
+
 
 Route.post('/test', 'TestController.index')
 Route.post('/show', 'TestController.show')
