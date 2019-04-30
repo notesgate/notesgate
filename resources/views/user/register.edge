@@ -42,7 +42,7 @@
 
 	@endif
 	<div class="login-card col-lg-3 col-md-5 col-sm-3">
-		<form method="POST" action="store">
+		<form method="POST" action="{{route('/register/store')}}">
 			{{csrfField()}}
 			<div class="form-group">
 				<label for="email">Email</label>
