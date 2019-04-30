@@ -37,6 +37,7 @@ Route.group(() => {
 
 
 Route.group(() => {
+	Route.post('/', 'RegisterController.create')
 	Route.post('/store', 'RegisterController.store').validator('Register')
 }).prefix('/register');
 
