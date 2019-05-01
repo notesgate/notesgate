@@ -6,7 +6,7 @@
 
 const User = use('App/Models/User')
 const Mail = use('Mail')
-
+const Encryption = use('Encryption')
 /**
  * Resourceful controller for interacting with registers
  */
@@ -48,23 +48,24 @@ class RegisterController {
 	 * 
 	 * @see MailController
 	 */
-	async store({ request, session, response }) {
+	async store({ request, session, response, view }) {
+		let hashCode = Encryption.encrypt(request.input('password') + request.input('name'))
+		console.log(hashCode);
+
 		const user = await User.create({
 			email: request.input('email'),
 			username: request.input('username'),
 			name: request.input('name'),
 			password: request.input('password'),
-			verified: "not"
+			verified: hashCode
 		})
 
-		user.save()
+		// user.save()
 		session.flash({ type: 'info', message: 'This is the message' })
-
 		await Mail.send('email.welcome', user.toJSON(), (message) => {
 			message
 				.to(user.email)
-				.from('muammar.clasic@gmail.com')
-				.subject('Welcome to yardstick')
+				.subject('Welcome to NotesGate')
 		})
 
 		return response.redirect('/login')
