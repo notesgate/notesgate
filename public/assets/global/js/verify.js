@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	var i = 0;
-	var speed = 50; /* The speed/duration of the effect in milliseconds */
+	var speed = 80; /* The speed/duration of the effect in milliseconds */
 	let id = "";
 
 	function typeWriter() {
@@ -14,7 +14,8 @@ $(document).ready(function () {
 			}
 			setTimeout(typeWriter, speed);
 		} else {
-			window.location = "http://127.0.0.1:3333/"
+			setTimeout(function () { window.location = "http://127.0.0.1:3333/"; }, 3000);
+
 		}
 	}
 
