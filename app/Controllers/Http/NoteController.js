@@ -15,7 +15,7 @@ class NoteController {
 	}
 
 	async get({
-		view
+		auth, view
 	}) {
 		return view.render('user.home');
 	}
