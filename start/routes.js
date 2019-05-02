@@ -21,8 +21,9 @@ Route.get('/board', 'BoardController.getAllBoard').as('board').middleware(['user
 Route.get('/write', 'NoteController.write').as('write').middleware(['user'])
 
 Route.group(() => {
-	Route.get('/write', 'NoteController.write')
-	Route.get('/read', 'NoteController.read')
+	Route.get('/write/:note', 'NoteController.write')
+	Route.get('/write/', 'NoteController.write')
+	Route.get('/read/:note', 'NoteController.read')
 	Route.get('/get', 'NoteController.get')
 	Route.get('/all', 'NoteController.all')
 	Route.post('/save', 'NoteController.save')

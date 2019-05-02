@@ -30,7 +30,6 @@ $(document).ready(function () {
 		// console.log("note", note);
 
 		$.post('/note/save', note, data => console.log(data));
-
 	});
 
 
@@ -68,4 +67,52 @@ $(document).ready(function () {
 	function clearText(params) {
 		return params.trim();
 	}
+
+	$('#block-menu').on('click', function () {
+		let element = $('.show-menu');
+
+		for (let index = 0; index < element.length; index++) {
+
+			$(element[index]).data('flag', "show");
+			$(element[index]).removeClass('show-menu');
+
+		}
+
+		$(this).removeClass('fade-menu');
+	});
 });
+function fontStyle(params) {
+	if ($(params).data('flag') == "show") {
+		$(params).addClass('show-menu');
+		$(params).data('flag', "hide");
+		$('#block-menu').addClass('fade-menu');
+
+		$(params).append('<button type="button">B</button>');
+
+	} else {
+		$(params).data('flag', "show");
+		$(params).removeClass('show-menu');
+
+		if ($('.show-menu').length == 0) {
+			$('#block-menu').removeClass('fade-menu');
+		}
+	}
+}
+function openTemp(params, id) {
+	if ($(params).data('flag') == "show") {
+		// $(params).parent().addClass('show-menu')
+
+		$(params).append('<button type="button">B</button>');
+		// $(params).data('flag', "hide");
+
+		// $('#block-menu').addClass('fade-menu');
+
+	} else {
+		$(params).data('flag', "show");
+		$(params).parent().removeClass('show-menu');
+		if ($('.show-menu').length == 0) {
+			$('#block-menu').removeClass('fade-menu');
+		}
+
+	}
+}
