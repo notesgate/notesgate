@@ -10,13 +10,39 @@
 	<div class="col-lg-8 col-md-10 col-sm-10 align-center">
 		<div id=editor class="jumbotron color-white">
 			<h1 class="note title-note text-content display-4 focus-content" contenteditable="true" data-note="title">
-				Title</h1>
-			<p class="note lable-note text-content lead" contenteditable="true" data-note="lable">#lable</p>
+				@if(note[0].title)
+				{{note[0].title}}
+				@else
+				Title
+				@endif
+			</h1>
+			<p class="note lable-note text-content lead" contenteditable="true" data-note="lable">
+				@if(note[0].lable)
+				@each(lable in note[0].lable)
+				#{{lable}}
+				@endeach
+				@else
+				#Lable
+				@endif
+			</p>
 			<hr class="my-2">
 			<p class="note decs-note text-content " contenteditable="true" data-note="desc">Description</p>
 			<div class="section">
-				<p class="note text-note text-content " contenteditable="true" data-note="section-text">Section</p>
-
+				<p class="note text-note text-content " contenteditable="true" data-note="section-text">
+					@if(note[0].section)
+					@each(section in note[0].section)
+					@if(section.flag=="section-text")
+					{{section.val}}
+					@elseif(section.flag=="section-img")
+					{{section.val}}
+					@else
+					{{section.val}}
+					@endif
+					@endeach
+					@else
+					Section
+					@endif
+				</p>
 			</div>
 		</div>
 		<div class="col-lg-12 text-align-center">
@@ -38,25 +64,36 @@
 		</div>
 
 	</div>
+	<div id="block-menu" class="">
 
+	</div>
 	<nav id="right-menu">
 		<div class="spawn-tbody"></div>
 		<table class=buttons-editor-menu>
 			<tbody>
 				<tr>
-					<td><button type="button">A</button></td>
+					<td>
+
+						<div data-flag="show" onclick="fontStyle(this)" type="button">A</div>
+
+					</td>
 				</tr>
 				<tr>
-					<td><button type="button">B</button></td>
+					<td>
+						<div data-flag="show" onclick="openTemp(this,'menu-b')" type="button">B</div>
+						<div id="menu-b">
+
+						</div>
+					</td>
 				</tr>
 				<tr>
-					<td><button type="button">C</button></td>
+					<td><button data-flag="show" onclick="openTemp(this)" type="button">C</button></td>
 				</tr>
 				<tr>
-					<td><button type="button">D</button></td>
+					<td><button data-flag="show" onclick="openTemp(this)" type="button">D</button></td>
 				</tr>
 				<tr>
-					<td><button type="button">E</button></td>
+					<td><button data-flag="show" onclick="openTemp(this)" type="button">E</button></td>
 				</tr>
 			</tbody>
 		</table>

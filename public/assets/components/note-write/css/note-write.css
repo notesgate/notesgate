@@ -3,6 +3,19 @@
 	bottom: 40px;
 }
 
+.show-menu {
+	width: 3000px !important;
+	right: 100px !important;
+	position: relative !important;
+}
+
+.fade-menu {
+	position: absolute;
+	width: 92%;
+	height: 100%;
+	top: 0;
+}
+
 #buttonSave {
 	float: right;
 }

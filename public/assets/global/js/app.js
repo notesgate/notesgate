@@ -1,5 +1,6 @@
 $(document).ready(function () {
-	var el = $(".focus-content")[0];
+	// cursor 
+	var el = $("'.focus-content")[0]';
 	var range = document.createRange();
 	var sel = window.getSelection();
 	range.setStart(el, $(el).text().lenght);
