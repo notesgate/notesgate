@@ -19,7 +19,9 @@ class LoginController {
 	 * @param {View} ctx.view
 	 */
 	async index({ request, response, view }) {
-		return view.render('user.login');
+		return view.render('user.login',{
+			title : 'NotesGate | Login'
+		});
 
 	}
 
