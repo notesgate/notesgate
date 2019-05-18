@@ -16,9 +16,9 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.get('/', 'NoteController.all').as('notesGate').middleware(['user'])
-Route.get('/board', 'BoardController.getAllBoard').as('board').middleware(['user'])
-Route.get('/write', 'NoteController.write').as('write').middleware(['user'])
+Route.get('/', 'NoteController.all').as('notesGate')
+Route.get('/board', 'BoardController.getAllBoard').as('board')//.middleware(['user'])
+Route.get('/write', 'NoteController.writeNote').as('write')//.middleware(['user'])
 
 Route.group(() => {
 	Route.get('/write/:note', 'NoteController.write')
@@ -27,7 +27,7 @@ Route.group(() => {
 	Route.get('/get', 'NoteController.get')
 	Route.get('/all', 'NoteController.all')
 	Route.post('/save', 'NoteController.save')
-}).prefix('/note')
+}).prefix('/note')//.middleware(['user'])
 
 
 Route.group(() => {

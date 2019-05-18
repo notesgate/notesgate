@@ -33,7 +33,9 @@ class RegisterController {
 	 * @param {View} ctx.view
 	 */
 	async create({ request, response, view }) {
-		return view.render('user.register');
+		return view.render('user.register', {
+			title: 'NotesGate | Register'
+		});
 	}
 
 	/**

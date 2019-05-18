@@ -34,7 +34,9 @@
     "nodemailer": "^6.1.1",
     "validator": "^10.11.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.1"
+  },
   "autoload": {
     "App": "./app"
   }
