@@ -1,0 +1,1000 @@
+  798  adonis serc --fev
+  799  adonis serv --def
+  800  adonis serv --dev
+  801  adonis serve --dev
+  802  nodemon server.js 
+  803  adonis serve --dev
+  804  npm i
+  805  adonis serve --dev
+  806  mongo
+  807  cd Documents/
+  808  cd pro/
+  809  cd nodePro/
+  810  ls
+  811  adonis new LearnLogin
+  812  cd LearnLogin/
+  813  npm instal lucid-mongo@3.1.2
+  814  npm i lucid-mongo@3.1.2
+  815  code .
+  816  service mongodb status
+  817  port
+  818  nodemon server.js 
+  819  adonis make:controller User
+  820  nodemon server.js 
+  821  npm install lucid-mongo@3.1.2
+  822  adonis make:controller User
+  823  nodemon server.js 
+  824  cd Documents/
+  825  ls
+  826  cd pro/
+  827  cd nodePro/
+  828  adonis new mongoCAD
+  829  cd mongoCAD/
+  830  adonis serve --dev
+  831  code .
+  832  npm uninstall sax
+  833  sudo npm uninstall -g lucid-mongo
+  834  npm install lucid-mongo@3.1.2
+  835  mongo
+  836  cd Documents/
+  837  cd ..
+  838  cd AP
+  839  cd Apps/
+  840  ls
+  841  cd Postman/
+  842  ls
+  843  ./Postman 
+  844  ./Postman &
+  845  exit
+  846  sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
+  847  mogrify
+  848  mongo
+  849  nodemon server.js 
+  850  ls -a
+  851  rm yarn.lock yarn-error.log 
+  852  ls
+  853  cd Apps/Postman/
+  854  ls
+  855  ./Postman 
+  856  ./Postman &
+  857  exit
+  858  mongo
+  859  nodemon server.js 
+  860  cd  Documents/
+  861  ls
+  862  cd Pro/
+  863  ls
+  864  cd ..
+  865  cd pro/
+  866  lks
+  867  ls
+  868  mkdir deeplearning
+  869  cd deeplearning/
+  870  ls
+  871  jupiter
+  872  sudo python3 -m pip install --upgrade pip
+  873  sudo python3 -m pip install jupyter
+  874  sudo apt-get install -y python3-venv
+  875  sudo poweroff 
+  876  nodemon server.js 
+  877  code .
+  878  ls
+  879  vim robi@zik.txt
+  880  vim amaril@zik.txt
+  881  vim robi@manda.txt
+  882  vim afi@zik.txt
+  883  vim ehsan@yuda.txt
+  884  ls
+  885  exit
+  886  cd Documents/
+  887  ls
+  888  cd tmps/
+  889  ls
+  890  mkdir kuliah
+  891  cd kuliah/
+  892  ls
+  893  vim reza@yuda.txt
+  894  nautilus
+  895  nautilus .
+  896  exit
+  897  ls
+  898  cd chatapp/
+  899  ls
+  900  exit
+  901  ping 8.8.8.8
+  902  ls
+  903  sls
+  904  ls
+  905  exit
+  906  ls
+  907  adonis chatzero
+  908  adonis new chatzero
+  909  ls
+  910  rm -r chatzero/
+  911  ls
+  912  exit
+  913  cd Documents/
+  914  cd Pro/
+  915  ls
+  916  rm -r chatapp/
+  917  adonis new chatapp
+  918  sudo apt-get update 
+  919  sudo poweroff 
+  920  cd Documents/
+  921  cd pro/
+  922  cd nodePro/
+  923  ls
+  924  cd mongoCAD/
+  925  code .
+  926  exit
+  927  cd Apps/
+  928  ls
+  929  cd Postman/
+  930  ls
+  931  cd app/
+  932  ls
+  933  cd resources/
+  934  ls
+  935  cd app/
+  936  ls
+  937  cd assets/
+  938  ls
+  939  nautilus .
+  940  cd ..
+  941  cd ../..
+  942  ls
+  943  cd ..
+  944  cd Postman/
+  945  ls
+  946  ./Postman 
+  947  ./Postman & 
+  948  exit
+  949  nodemon server.js 
+  950  cd Documents/
+  951  ks
+  952  cd Pro/
+  953  ls 
+  954  rm -r chatapp/
+  955  ls
+  956  adonis new chatapp
+  957  cd chatapp/
+  958  ls
+  959  code .
+  960  terminator &
+  961  exit
+  962  adonis install lucid-mongo
+  963  nodemon server.js 
+  964  exit
+  965  ls
+  966  adonis make:controller Message
+  967  adonis make:model Message
+  968  adonis make:view Layout.main
+  969  git init
+  970  git add *
+  971  git add .
+  972  mongo
+  973  adonis install @adonisjs/bodyparser
+  974  adonis make:controller BadWord
+  975  adonis make:model BadWord
+  976  adonis make:controller main
+  977  sudo npm install -g express
+  978  sudo npm install -g mongoose
+  979  sudo npm install -g body-parser
+  980  nodemon server.js 
+  981  nodemon server.js 
+  982  cd DOc
+  983  cd Documents/
+  984  ls
+  985  cd Pro/
+  986  ls
+  987  cd ..
+  988  cd or
+  989  cd pro/
+  990  ls
+  991  cd StukturDataAlgoritma/
+  992  ls
+  993  cd ..
+  994  cd Apps/
+  995  ping 8.8.8.8
+  996  sudo poweroff 
+  997  cd /media/
+  998  ks
+  999  ls
+ 1000  cd mza/
+ 1001  ks
+ 1002  ls
+ 1003  cd Data/
+ 1004  sudo cd Data/
+ 1005  sudo su
+ 1006  cd Documents/
+ 1007  cd p
+ 1008  cd pro/
+ 1009  ks
+ 1010  ls
+ 1011  cd nodePro/
+ 1012  ls
+ 1013  mkdir exp1Mongoose
+ 1014  rm -r exp1Mongoose/
+ 1015  adonis new exp1Mongoose
+ 1016  cd exp1Mongoose/
+ 1017  node .
+ 1018  code .
+ 1019  adonis install lucid-mongoo
+ 1020  adonis install lucid-mongo
+ 1021  make model:Test
+ 1022  adnonis makel:model Test
+ 1023  adonis makel:model Test
+ 1024  adonis make:model Test
+ 1025  adonis make:controller Test
+ 1026  sudo npm inta -g mongoose
+ 1027  sudo npm i -g mongoose
+ 1028  sudo npm i - mongoose
+ 1029  npm i mongoose
+ 1030  nodemon server.js 
+ 1031  cd Documents/
+ 1032  cd pr
+ 1033  cd pro/
+ 1034  LS
+ 1035  ls
+ 1036  cd nodePro/
+ 1037  ls
+ 1038  mkdir adonis4mongo
+ 1039  rm adonis4mongo/
+ 1040  rm -r adonis4mongo/
+ 1041  adonis new adonis4mongo/
+ 1042  cd ..
+ 1043  cd nodePro/
+ 1044  rm -r adonis4mongo/
+ 1045  adonis new adonisMongo
+ 1046  cd adonisMongo/
+ 1047  ls
+ 1048  code .
+ 1049  adonis install adonis-mongoose-model --yarn
+ 1050  cd Apps/
+ 1051  cd Postman/
+ 1052  ./Postman &
+ 1053  cd Apps/Postman/
+ 1054  ./ &
+ 1055  ./Postman &
+ 1056  exit
+ 1057  adonis make:mongoose Foo
+ 1058  adonis make:controller Foo
+ 1059  nodemon server.js 
+ 1060  terminator &
+ 1061  cd .
+ 1062  ls
+ 1063  cd Documents/pro/
+ 1064  ls
+ 1065  cd nodePro/
+ 1066  ls
+ 1067  adonis new exp2mongoose
+ 1068  code .
+ 1069  cd exp2mongoose/
+ 1070  code .
+ 1071  adonis install adonis-mongoose-model --yarn
+ 1072  mongo
+ 1073  ls
+ 1074  cd Documents/pro/
+ 1075  ls
+ 1076  cd nodePro/
+ 1077  ls
+ 1078  cd exp2mongoose/
+ 1079  nodemon server.js 
+ 1080  sudo apt-get install gparted
+ 1081  cd Documents/pro/nodePro/exp2mongoose/
+ 1082  ls
+ 1083  cd /mnt/
+ 1084  ks
+ 1085  ls
+ 1086  lsblk 
+ 1087  sudo gparted
+ 1088  sudo 'kill all gparted
+ 1089  sudo kill all gparted
+ 1090  sudo killall gparted
+ 1091  sudo killall gparte*
+ 1092  sudo killall gpart
+ 1093  sudo gparted
+ 1094  cd Documents/pro/nodePro/exp2mongoose/
+ 1095  ls
+ 1096  code .
+ 1097  cd Documents/pro/nodePro/exp2mongoose/
+ 1098  ls
+ 1099  nodemon server.js 
+ 1100  ls
+ 1101  adonis install adonis-mongoose-model --yarn
+ 1102  ls
+ 1103  exit
+ 1104  exit
+ 1105  htop
+ 1106  sudo apt install htop
+ 1107  htop
+ 1108  reboot 
+ 1109  cd .local/share/applications/
+ 1110  ls
+ 1111  cp jetbrains-clion.desktop postman.desktop.old
+ 1112  cim postman.desktop.old 
+ 1113  vim postman.desktop.old 
+ 1114  mv postman.desktop.old postman.desktop
+ 1115  cd 
+ 1116  cd Apps/
+ 1117  ld
+ 1118  ls
+ 1119  cd Postman/
+ 1120  ls
+ 1121  cd app/
+ 1122  ls
+ 1123  pwd
+ 1124  ls
+ 1125  cd resources/
+ 1126  ls
+ 1127  cd app/
+ 1128  ls
+ 1129  cd assets/
+ 1130  ls
+ 1131  pwd
+ 1132  cd Documents/
+ 1133  lks
+ 1134  cd pro/
+ 1135  ;s
+ 1136  ls
+ 1137  cd nodePro/
+ 1138  ;s
+ 1139  ls
+ 1140  cd exp2mongoose/
+ 1141  code .
+ 1142  adonis make:mongoose Note
+ 1143  adonis make:controller Note
+ 1144  exit
+ 1145  exit
+ 1146  cd ..
+ 1147  git clone https://github.com/duyluonglc/adonis-mongodb-boilerplate.git
+ 1148  npm install
+ 1149  ls
+ 1150  cd adonis-mongodb-boilerplate/
+ 1151  ls
+ 1152  npm install
+ 1153  ls
+ 1154  mv .env.testing .env.test
+ 1155  npm test
+ 1156  cd ..
+ 1157  rm -r adonis-mongodb-boilerplate/
+ 1158  sudo rm -r adonis-mongodb-boilerplate/
+ 1159  nodemon 
+ 1160  nodemon start/
+ 1161  ls
+ 1162  nodemon server.js 
+ 1163  cd ..
+ 1164  ls
+ 1165  adonis new lucidM
+ 1166  cd LearnLogin/
+ 1167  cd ..
+ 1168  cd lucidM/
+ 1169  ls
+ 1170  code .
+ 1171  nodemon server.js 
+ 1172  cd ../../q../Pn
+ 1173  ls
+ 1174  nodemon server.js 
+ 1175  cd ../
+ 1176  cd ../../
+ 1177  cd Pro/notesgate/
+ 1178  nodemon server.js 
+ 1179  ls
+ 1180  andonis install lucid-mongo
+ 1181  adonis install lucid-mongo
+ 1182  terminator &
+ 1183  adonis make:controller User
+ 1184  mongo
+ 1185  mongo --username ppl --pasword ppl
+ 1186  mongo help
+ 1187  mongo --lhelp
+ 1188  mongo --help
+ 1189  mongo --username ppl --pasword ppl --authenticationDatabase admin
+ 1190  mongo --username ppl --password ppl --authenticationDatabase admin
+ 1191  mongo
+ 1192  mongo --username ppl --password ppl --authenticationDatabase admin
+ 1193  mongo
+ 1194  mongo notesgate -u ppl -p 'ppl'
+ 1195  mongo
+ 1196  cd ../../../Pro/notesgate/
+ 1197  ls
+ 1198  mongo
+ 1199  adonis make:model Note
+ 1200  adonis make:controller note
+ 1201  cd ../../../Pro/notesgate/
+ 1202  ls
+ 1203  make model:Note
+ 1204  adonis make model:Note
+ 1205  adonis make:model Note
+ 1206  cd /usr/include/
+ 1207  cd GL
+ 1208  ls
+ 1209  cat glut.h 
+ 1210  ls
+ 1211  cat glut.h .
+ 1212  cat glut.h 
+ 1213  ls
+ 1214  logout 
+ 1215  reboot 
+ 1216  sudo apt-get upfate
+ 1217  sudo apt-get update
+ 1218  ls
+ 1219  cat flagComplie.txt 
+ 1220  ls
+ 1221  cat flagComplie.txt 
+ 1222  cd ref/
+ 1223  ls
+ 1224  cd pro1/
+ 1225  ls
+ 1226  cd ..
+ 1227  ls
+ 1228  cat Makefile 
+ 1229  ls
+ 1230  cat flagComplie.txt 
+ 1231  cd
+ 1232  ls
+ 1233  mkdir Bin
+ 1234  cd Bin
+ 1235  opengl
+ 1236  vim opengl
+ 1237  exit
+ 1238  ls
+ 1239  sudo chmod +x
+ 1240  sudo chmod +x opengl 
+ 1241  cd 
+ 1242  vim .bashrc 
+ 1243  source .bashrc 
+ 1244  exit
+ 1245  cat bagunDatar.cpp 
+ 1246  cat example2S.cpp 
+ 1247  man ascii
+ 1248  cd Documents/
+ 1249  ls
+ 1250  cd Pro/
+ 1251  ls
+ 1252  cd ..
+ 1253  cd or
+ 1254  cd pro/
+ 1255  ls
+ 1256  cd c/opengl/
+ 1257  ls
+ 1258  mkdir uts
+ 1259  cd uts/
+ 1260  code .
+ 1261  ls
+ 1262  cd ..
+ 1263  cd uts/
+ 1264  ls
+ 1265  gpp no10.cc -lglut -lGL -o
+ 1266  g++ no10.cc -lglut -lGL -o out
+ 1267  g++ no10.cc -lglut -lGL -lglu32 -o out
+ 1268  g++ no10.cc -lglut -lGL -lgl32 -o out
+ 1269  g++ no10.cc -lglut -lGL -lglu32 -o out
+ 1270  g++ -lglut -lGL -lGLU -o out no10.cc 
+ 1271  g++ no10.cc -lglut -lGL -lGLU -o out 
+ 1272  ls
+ 1273  ./out 
+ 1274  ls
+ 1275  ~/Bin/opengl 
+ 1276  ~/Bin/opengl ./
+ 1277  ~/Bin/opengl .\
+ 1278  ~/Bin/opengl .
+ 1279  ks
+ 1280  ls
+ 1281  mkdir test
+ 1282  ~/Bin/opengl test/
+ 1283  ~/Bin/opengl 
+ 1284  ~/Bin/opengl s
+ 1285  ~/Bin/opengl sdasd
+ 1286  ~/Bin/opengl pwd
+ 1287  ~/Bin/opengl .
+ 1288  ~/Bin/opengl pw
+ 1289  ~/Bin/opengl pw s
+ 1290  ~/Bin/opengl 
+ 1291  ~/Bin/opengl dsd dsadsa
+ 1292  ~/Bin/opengl 
+ 1293  ~/Bin/opengl j
+ 1294  ~/Bin/opengl j j
+ 1295  ~/Bin/opengl 
+ 1296  ~/Bin/opengl sdsa  dd as dasd a
+ 1297  ~/Bin/opengl sds
+ 1298  ~/Bin/opengl 
+ 1299  ~/Bin/opengl
+ 1300  ~/Bin/opengl h h
+ 1301  ~/Bin/opengl h h h
+ 1302  ~/Bin/opengl h h
+ 1303  ~/Bin/opengl ha hs
+ 1304  ~/Bin/opengl ha 
+ 1305  ~/Bin/opengl ha k
+ 1306  ~/Bin/opengl ha 
+ 1307  ~/Bin/opengl h
+ 1308  ~/Bin/opengl 
+ 1309  ls
+ 1310  source ~/.bashrc 
+ 1311  ls
+ 1312  rm out 
+ 1313  rm -r test/
+ 1314  ls
+ 1315  opengl no10.cc file
+ 1316  ls
+ 1317  ./file 
+ 1318  ls
+ 1319  rm file 
+ 1320  ls
+ 1321  opengl no10.cc file
+ 1322  ls
+ 1323  ./file 
+ 1324  ls
+ 1325  rm file 
+ 1326  ls
+ 1327  mkdir src
+ 1328  mkdir dst
+ 1329  ls
+ 1330  mv no10.cc s
+ 1331  ls
+ 1332  mv dst/ out
+ 1333  opengl src/no10.cc out/
+ 1334  opengl src/no10.cc ./out/
+ 1335  cd out/
+ 1336  ls
+ 1337  cd ..
+ 1338  ls
+ 1339  cd src/
+ 1340  ls
+ 1341  cd ..
+ 1342  opengl src/no10.cc ./out/file
+ 1343  ./out/file 
+ 1344  ls
+ 1345  cd src/
+ 1346  ls
+ 1347  cd ..
+ 1348  ls
+ 1349  rm no10.cc 
+ 1350  opengl src/no9.cc ./out/file2
+ 1351  ./out/file2
+ 1352  opengl src/no9.cc ./out/file2
+ 1353  ./out/file2
+ 1354  opengl src/no9.cc ./out/file2
+ 1355  ./out/file2
+ 1356  opengl src/no9.cc ./out/file2
+ 1357  ./out/file2
+ 1358  opengl src/no9.cc ./out/file2
+ 1359  ./out/file2
+ 1360  opengl src/no9.cc ./out/file2
+ 1361  ./out/file2
+ 1362  ls
+ 1363  g++ src/no9.cc -lglut -lGLU -lGL -o out/file3
+ 1364  ./out/file3
+ 1365  g++ src/no9.cc -lglut -lGLU -lGL -o out/file3
+ 1366  ./out/file3
+ 1367  g++ src/no9.cc -lglut -lGLU -lGL -o out/file4
+ 1368  ./out/file4
+ 1369  g++ src/no9.cc -lglut -lGLU -lGL -o out/file4
+ 1370  ./out/file4
+ 1371  g++ src/no9.cc -lglut -lGLU -lGL -o out/file4
+ 1372  ./out/file4
+ 1373  g++ src/no9.cc -lglut -lGLU -lGL -o out/file4
+ 1374  ./out/file4
+ 1375  g++ src/no9.cc -lglut -lGLU -lGL -o out/file4
+ 1376  ./out/file4
+ 1377  g++ src/no9.cc -lglut -lGLU -lGL -o out/file4
+ 1378  ./out/file4
+ 1379  g++ src/no9.cc -lglut -lGLU -lGL -o out/file4
+ 1380  ./out/file4
+ 1381  g++ src/no11.cc -lglut -lGLU -lGL -o out/file4
+ 1382  ./out/file4
+ 1383  g++ src/no9.cc -lglut -lGLU -lGL -o out/file4
+ 1384  ./out/file4
+ 1385  g++ src/no9.cc -lglut -lGLU -lGL -o out/file4
+ 1386  ./out/file4
+ 1387  g++ src/no9.cc -lglut -lGLU -lGL -o out/file4
+ 1388  ./out/file4
+ 1389  g++ src/no9.cc -lglut -lGLU -lGL -o out/file4
+ 1390  ./out/file4
+ 1391  g++ src/no9.cc -lglut -lGLU -lGL -o out/file4
+ 1392  ./out/file4
+ 1393  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1394  ./out/file4
+ 1395  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1396  ./out/file4
+ 1397  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1398  ./out/file4
+ 1399  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1400  ./out/file4
+ 1401  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1402  ./out/file4
+ 1403  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1404  ./out/file4
+ 1405  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1406  ./out/file4
+ 1407  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1408  ./out/file4
+ 1409  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1410  ./out/file4
+ 1411  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1412  ./out/file4
+ 1413  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1414  ./out/file4
+ 1415  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1416  ./out/file4
+ 1417  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1418  ./out/file4
+ 1419  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1420  ./out/file4
+ 1421  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1422  ./out/file4
+ 1423  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1424  ./out/file4
+ 1425  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1426  ./out/file4
+ 1427  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1428  ./out/file4
+ 1429  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1430  ./out/file4
+ 1431  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1432  ./out/file4
+ 1433  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1434  ./out/file4
+ 1435  g++ src/prak3.cc -lglut -lGLU -lGL -o out/fileprak3
+ 1436  ./out/fileprak3 
+ 1437  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1438  ./out/file4
+ 1439  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1440  ./out/file4
+ 1441  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1442  ./out/file4
+ 1443  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1444  ./out/file4
+ 1445  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1446  ./out/file4
+ 1447  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1448  ./out/file4
+ 1449  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1450  ./out/file4
+ 1451  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1452  ./out/file4
+ 1453  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1454  ./out/file4
+ 1455  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1456  ./out/file4
+ 1457  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1458  ./out/file4
+ 1459  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1460  ./out/file4
+ 1461  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1462  ./out/file4
+ 1463  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1464  ./out/file4
+ 1465  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1466  ./out/file4
+ 1467  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1468  ./out/file4
+ 1469  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1470  ./out/file4
+ 1471  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1472  ./out/file4
+ 1473  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1474  ./out/file4
+ 1475  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1476  ./out/file4
+ 1477  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1478  ./out/file4
+ 1479  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1480  ./out/file4
+ 1481  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1482  ./out/file4
+ 1483  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1484  ./out/file4
+ 1485  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1486  ./out/file4
+ 1487  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1488  ./out/file4
+ 1489  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1490  ./out/file4
+ 1491  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1492  ./out/file4
+ 1493  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1494  ./out/file4
+ 1495  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1496  ./out/file4
+ 1497  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1498  ./out/file4
+ 1499  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1500  ./out/file4
+ 1501  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1502  ./out/file4
+ 1503  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1504  ./out/file4
+ 1505  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1506  ./out/file4
+ 1507  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1508  ./out/file4
+ 1509  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1510  ./out/file4
+ 1511  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1512  ./out/file4
+ 1513  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1514  ./out/file4
+ 1515  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1516  ./out/file4
+ 1517  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1518  ./out/file4
+ 1519  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1520  ./out/file4
+ 1521  g++ src/ref.cc -lglut -lGLU -lGL -o out/file4
+ 1522  ./out/file4
+ 1523  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1524  ./out/file44
+ 1525  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1526  ./out/file44
+ 1527  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1528  ./out/file44
+ 1529  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1530  ./out/file44
+ 1531  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1532  ./out/file44
+ 1533  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1534  ./out/file44
+ 1535  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1536  ./out/file44
+ 1537  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1538  ./out/file44
+ 1539  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1540  ./out/file44
+ 1541  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1542  ./out/file44
+ 1543  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1544  ./out/file44
+ 1545  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1546  ./out/file44
+ 1547  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1548  ./out/file44
+ 1549  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1550  ./out/file44
+ 1551  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1552  ./out/file44
+ 1553  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1554  ./out/file44
+ 1555  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1556  ./out/file44
+ 1557  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1558  ./out/file44
+ 1559  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1560  ./out/file44
+ 1561  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1562  ./out/file44
+ 1563  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1564  ./out/file44
+ 1565  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1566  ./out/file44
+ 1567  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1568  ./out/file44
+ 1569  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1570  ./out/file44
+ 1571  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1572  ./out/file44
+ 1573  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1574  ./out/file44
+ 1575  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1576  ./out/file44
+ 1577  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1578  ./out/file44
+ 1579  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1580  ./out/file44
+ 1581  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1582  ./out/file44
+ 1583  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1584  ./out/file44
+ 1585  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1586  ./out/file44
+ 1587  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1588  ./out/file44
+ 1589  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1590  ./out/file44
+ 1591  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1592  ./out/file44
+ 1593  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1594  ./out/file44
+ 1595  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1596  ./out/file44
+ 1597  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1598  ./out/file44
+ 1599  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1600  ./out/file44
+ 1601  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1602  ./out/file44
+ 1603  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1604  ./out/file44
+ 1605  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1606  ./out/file44
+ 1607  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1608  ./out/file44
+ 1609  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1610  ./out/file44
+ 1611  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1612  ./out/file44
+ 1613  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1614  ./out/file44
+ 1615  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1616  ./out/file44
+ 1617  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1618  ./out/file44
+ 1619  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1620  ./out/file44
+ 1621  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1622  ./out/file44
+ 1623  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1624  ./out/file44
+ 1625  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1626  ./out/file44
+ 1627  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1628  ./out/file44
+ 1629  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1630  ./out/file44
+ 1631  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1632  ./out/file44
+ 1633  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1634  ./out/file44
+ 1635  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1636  ./out/file44
+ 1637  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1638  ./out/file44
+ 1639  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1640  ./out/file44
+ 1641  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1642  ./out/file44
+ 1643  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1644  ./out/file44
+ 1645  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1646  ./out/file44
+ 1647  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1648  ./out/file44
+ 1649  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1650  ./out/file44
+ 1651  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1652  ./out/file44
+ 1653  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1654  ./out/file44
+ 1655  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1656  ./out/file44
+ 1657  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1658  ./out/file44
+ 1659  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1660  ./out/file44
+ 1661  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1662  ./out/file44
+ 1663  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1664  ./out/file44
+ 1665  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1666  ./out/file44
+ 1667  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1668  ./out/file44
+ 1669  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1670  ./out/file44
+ 1671  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1672  ./out/file44
+ 1673  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1674  ./out/file44
+ 1675  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1676  ./out/file44
+ 1677  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1678  ./out/file44
+ 1679  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1680  ./out/file44
+ 1681  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1682  ./out/file44
+ 1683  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1684  ./out/file44
+ 1685  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1686  ./out/file44
+ 1687  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1688  ./out/file44
+ 1689  g++ src/prak3.cc -lglut -lGLU -lGL -o out/file
+ 1690  ./out/file
+ 1691  g++ src/prak3.cc -lglut -lGLU -lGL -o out/file
+ 1692  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1693  ./out/file
+ 1694  ./out/file44
+ 1695  ./out/file
+ 1696  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1697  ./out/file44
+ 1698  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1699  ./out/file44
+ 1700  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1701  ./out/file44
+ 1702  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1703  ./out/file44
+ 1704  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1705  ./out/file44
+ 1706  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1707  ./out/file44
+ 1708  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1709  ./out/file44
+ 1710  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1711  ./out/file44
+ 1712  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1713  ./out/file44
+ 1714  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1715  ./out/file44
+ 1716  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1717  ./out/file44
+ 1718  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1719  ./out/file44
+ 1720  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1721  ./out/file44
+ 1722  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1723  ./out/file44
+ 1724  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1725  ./out/file44
+ 1726  g++ src/no9.cc -lglut -lGLU -lGL -o out/file44
+ 1727  ./out/file44
+ 1728  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1729  ./out/file44
+ 1730  g++ src/no9.cc -lglut -lGLU -lGL -o out/file44
+ 1731  ./out/file44
+ 1732  g++ src/no9.cc -lglut -lGLU -lGL -o out/file44
+ 1733  ./out/file44
+ 1734  g++ src/no9.cc -lglut -lGLU -lGL -o out/file44
+ 1735  ./out/file44
+ 1736  g++ src/no9.cc -lglut -lGLU -lGL -o out/file44
+ 1737  ./out/file44
+ 1738  g++ src/no9.cc -lglut -lGLU -lGL -o out/file44
+ 1739  ./out/file44
+ 1740  g++ src/no9.cc -lglut -lGLU -lGL -o out/file44
+ 1741  ./out/file44
+ 1742  g++ src/no9.cc -lglut -lGLU -lGL -o out/file44
+ 1743  ./out/file44
+ 1744  g++ src/no9.cc -lglut -lGLU -lGL -o out/file44
+ 1745  ./out/file44
+ 1746  g++ src/no9.cc -lglut -lGLU -lGL -o out/file44
+ 1747  ./out/file44
+ 1748  g++ src/no9.cc -lglut -lGLU -lGL -o out/file44
+ 1749  ./out/file44
+ 1750  g++ src/no9.cc -lglut -lGLU -lGL -o out/file44
+ 1751  ./out/file44
+ 1752  g++ src/no9.cc -lglut -lGLU -lGL -o out/file44
+ 1753  ./out/file44
+ 1754  g++ src/no9.cc -lglut -lGLU -lGL -o out/file44
+ 1755  ./out/file44
+ 1756  g++ src/no9.cc -lglut -lGLU -lGL -o out/file44
+ 1757  ./out/file44
+ 1758  g++ src/no9.cc -lglut -lGLU -lGL -o out/file44
+ 1759  ./out/file44
+ 1760  g++ src/no9.cc -lglut -lGLU -lGL -o out/file44
+ 1761  ./out/file44
+ 1762  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1763  ./out/file44
+ 1764  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1765  ./out/file44
+ 1766  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1767  ./out/file44
+ 1768  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1769  ./out/file44
+ 1770  g++ src/no10.cc -lglut -lGLU -lGL -o out/file44
+ 1771  ./out/file44
+ 1772  poweroff 
+ 1773  exit
+ 1774  terminator 
+ 1775  terminator  &
+ 1776  exit
+ 1777  ls
+ 1778  adonis make:controller Login
+ 1779  adonis make:model Login
+ 1780  adonis make:view user.login
+ 1781  adonis make:controller Login --resource
+ 1782  nodemon server.js 
+ 1783  sudo poweroff 
+ 1784  ls
+ 1785  opengl src/tes.cc out/soal
+ 1786  out/soal 
+ 1787  terminator &
+ 1788  mongo
+ 1789  adonis make:controller register --resource
+ 1790  ls
+ 1791  nodemon server.js 
+ 1792  exit
+ 1793  terminator 
+ 1794  terminator &
+ 1795  exit
+ 1796  mongo
+ 1797  history > file
