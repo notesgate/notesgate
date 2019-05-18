@@ -27,7 +27,7 @@ Route.group(() => {
 	Route.get('/get', 'NoteController.get')
 	Route.get('/all', 'NoteController.all')
 	Route.post('/save', 'NoteController.save')
-}).prefix('/note').middleware(['user'])
+}).prefix('/note')
 
 
 Route.group(() => {

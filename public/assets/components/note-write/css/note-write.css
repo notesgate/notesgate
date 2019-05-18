@@ -4,9 +4,12 @@
 }
 
 .show-menu {
-	width: 3000px !important;
-	right: 100px !important;
-	position: relative !important;
+
+	position: relative;
+
+	display: flex;
+
+	right: 311%;
 }
 
 .fade-menu {

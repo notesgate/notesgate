@@ -83,26 +83,38 @@ $(document).ready(function () {
 });
 function fontStyle(params) {
 	if ($(params).data('flag') == "show") {
+		var rect = params.getBoundingClientRect();
+		console.log(rect.top, rect.right, rect.bottom, rect.left);
+
+		$(params).css('width', rect.bottom + (rect.bottom * (19 / 100)));
 		$(params).addClass('show-menu');
 		$(params).data('flag', "hide");
 		$('#block-menu').addClass('fade-menu');
 
-		$(params).append('<button type="button">B</button>');
+		$(params).prepend('<button class="menu" type="button">B</button>');
+		$(params).prepend('<button class="menu" type="button">B</button>');
+		$(params).prepend('<button class="menu" type="button">B</button>');
+
+
 
 	} else {
 		$(params).data('flag', "show");
 		$(params).removeClass('show-menu');
+		console.log(params.id + ' .menu', $(params.id + ' .menu'));
 
+		$("#" + params.id + ' .menu').remove();
 		if ($('.show-menu').length == 0) {
 			$('#block-menu').removeClass('fade-menu');
 		}
+
+
 	}
 }
 function openTemp(params, id) {
 	if ($(params).data('flag') == "show") {
 		// $(params).parent().addClass('show-menu')
 
-		$(params).append('<button type="button">B</button>');
+		$(params).prepend('<button type="button">B</button>');
 		// $(params).data('flag', "hide");
 
 		// $('#block-menu').addClass('fade-menu');
