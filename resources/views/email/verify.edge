@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>NotesGate | Login </title>
+	{{ style('assets/theme/css/bootstrap.css') }}
+	{{ style('assets/global/css/app.css') }}
+	{{ style('assets/global/css/component.css') }}
+
+	<script>
+		var name = '{{result.name}}';
+		var text = "<hi>Hi " + name;
+		text += "<we>Welcome to NotesGate";
+		text += "<me>Change the word with yours notes " + name;
+		text += "<pa>Our will jump to login page in a few moments ";
+	</script>
+</head>
+
+<body>
+	<div class="container full">
+		<div class="single-card col-lg-6 col-md-6 col-sm-6">
+			<h1 id="hi" style="line-height: 45px; text-align:left"></h1>
+			<h3 id="we" style="line-height: 35px; text-align:left"></h3>
+			<h5 id="me" style="line-height: 15px; text-align:left"></h5>
+			<h5 id="pa" style="line-height: 15px; text-align:left"></h5>
+		</div>
+	</div>
+	{{ script('assets/theme/js/jquery-3.js') }}
+	{{ script('assets/theme/js/bootstrap.js') }}
+	{{ script('assets/global/js/verify.js') }}
+</body>
+
+</html>

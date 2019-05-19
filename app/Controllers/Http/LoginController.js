@@ -52,11 +52,9 @@ class LoginController {
 		let data = user.toJSON();
 		if (data.length == 1) {
 			// TODO auth
-			await auth.attempt(email, password);
-			console.log('to');
-			console.log(data);
+			const token = await auth.attempt(email, password);
 
-			return response.route('/');
+			return response.route('/', token);
 
 		}
 
@@ -108,7 +106,8 @@ class LoginController {
 	 * @param {Request} ctx.request
 	 * @param {Response} ctx.response
 	 */
-	async destroy({ params, request, response }) {
+	async destroy({ auth, params, request, response }) {
+		await auth.logout()
 	}
 
 	async login(request, response) {

@@ -3,7 +3,10 @@
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
+
 const User = use('App/Models/User')
+const Mail = use('Mail')
+const Encryption = use('Encryption')
 /**
  * Resourceful controller for interacting with registers
  */
@@ -38,21 +41,35 @@ class RegisterController {
 	/**
 	 * Create/save a new register.
 	 * POST registers
-	 *
+	 * User yang melakukan register akan disimpan pada collection user
+	 * Kedaan awal user yang baru mendaftar adalah not verified
+	 * 
 	 * @param {object} ctx
 	 * @param {Request} ctx.request
 	 * @param {Response} ctx.response
+	 * 
+	 * @see MailController
 	 */
-	async store({ request, session, response }) {
+	async store({ request, session, response, view }) {
+		let hashCode = Encryption.encrypt(request.input('password') + request.input('name'))
+		console.log(hashCode);
+
 		const user = await User.create({
-			username: request.input('username'),
 			email: request.input('email'),
+			username: request.input('username'),
 			name: request.input('name'),
-			password: request.input('password')
+			password: request.input('password'),
+			verified: hashCode
 		})
 
-		user.save()
+		// user.save()
 		session.flash({ type: 'info', message: 'This is the message' })
+		await Mail.send('email.welcome', user.toJSON(), (message) => {
+			message
+				.to(user.email)
+				.subject('Welcome to NotesGate')
+		})
+
 		return response.redirect('/login')
 	}
 

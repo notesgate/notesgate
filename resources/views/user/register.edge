@@ -11,7 +11,6 @@
 	{{ style('assets/global/css/component.css') }}
 
 	{{ style('assets/components/leftbar/css/style-app.css') }}
-	{{ style('assets/global/css/login.css') }}
 
 </head>
 
@@ -41,30 +40,32 @@
 	@endif
 
 	@endif
-	<div class="login-card col-lg-3 col-md-5 col-sm-3">
-		<form method="POST" action="{{route('/register/store')}}">
-			{{csrfField()}}
-			<div class="form-group">
-				<label for="email">Email</label>
-				<input name="email" type="email" class="form-control" aria-describedby="emailHelp"
-					placeholder="Enter email">
-			</div>
-			<div class="form-group">
-				<label for="username">Username</label>
-				<input name="username" type="text" class="form-control" placeholder="Username">
-			</div>
-			<div class="form-group">
-				<label for="name">Name</label>
-				<input name="name" type="text" class="form-control" placeholder="Your name">
-			</div>
-			<div class="form-group">
-				<label for="password">Password</label>
-				<input name="password" type="password" class="form-control" placeholder="Password">
-				<br>
-				<input name="password_confirmation" type="password" class="form-control" placeholder="Password">
-			</div>
-			<button type="submit" class="btn btn-primary">Submit</button>
-		</form>
+	<div class="container full">
+		<div class="single-card col-lg-3 col-md-5 col-sm-3">
+			<form method="POST" action="{{route('/register/store')}}">
+				{{csrfField()}}
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input name="email" type="email" class="form-control" aria-describedby="emailHelp"
+						placeholder="Enter email">
+				</div>
+				<div class="form-group">
+					<label for="username">Username</label>
+					<input name="username" type="text" class="form-control" placeholder="Username">
+				</div>
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input name="name" type="text" class="form-control" placeholder="Your name">
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input name="password" type="password" class="form-control" placeholder="Password">
+					<br>
+					<input name="password_confirmation" type="password" class="form-control" placeholder="Password">
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
 	</div>
 	{{ script('assets/theme/js/jquery-3.js') }}
 	{{ script('assets/theme/js/bootstrap.js') }}

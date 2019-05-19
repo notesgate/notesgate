@@ -10,14 +10,12 @@
 	{{ style('assets/global/css/app.css') }}
 	{{ style('assets/global/css/component.css') }}
 
-	{{ style('assets/components/leftbar/css/style-app.css') }}
-	{{ style('assets/global/css/login.css') }}
 
 </head>
 
 <body>
-	<div class="login-card col-lg-3 col-md-5 col-sm-3">
-		<div class="">
+	<div class="container full">
+		<div class="single-card col-lg-3 col-md-5 col-sm-3">
 			<form method="POST" action="{{route('/login/store')}}">
 				{{csrfField()}}
 

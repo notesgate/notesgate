@@ -3,6 +3,22 @@
 	bottom: 40px;
 }
 
+.show-menu {
+
+	position: relative;
+
+	display: flex;
+
+	right: 311%;
+}
+
+.fade-menu {
+	position: absolute;
+	width: 92%;
+	height: 100%;
+	top: 0;
+}
+
 #buttonSave {
 	float: right;
 }
