@@ -17,8 +17,8 @@
 const Route = use('Route')
 
 Route.get('/', 'NoteController.all').as('notesGate')
-Route.get('/board', 'BoardController.getAllBoard').as('board').middleware(['user'])
-Route.get('/write', 'NoteController.writeNote').as('write').middleware(['user'])
+Route.get('/board', 'BoardController.getAllBoard').as('board')//.middleware(['user'])
+Route.get('/write', 'NoteController.writeNote').as('write')//.middleware(['user'])
 
 
 Route.group(() => {
@@ -27,7 +27,7 @@ Route.group(() => {
 	Route.get('/get', 'NoteController.get')
 	Route.get('/all', 'NoteController.all')
 	Route.post('/save', 'NoteController.save')
-}).prefix('/note').middleware(['user'])
+}).prefix('/note')//.middleware(['user'])
 
 
 Route.group(() => {

@@ -32,7 +32,9 @@
     "mongoose": "^5.5.3",
     "validator": "^10.11.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.1"
+  },
   "autoload": {
     "App": "./app"
   }
