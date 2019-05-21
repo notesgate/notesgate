@@ -59,6 +59,10 @@ class NoteController {
 		const note = await Note.all()
 		const data = note.toJSON();
 		// console.log("getnote", data);
+		data.write="active"
+		data.board="nav-item"
+		data.trash="nav-item"
+		data.setting="nav-item"
 		return view.render('user.home', { notes: data });
 	}
 
