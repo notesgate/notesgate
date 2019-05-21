@@ -4,7 +4,12 @@ class BoardController {
 	async getAllBoard({
 		view
 	}) {
-		return view.render('user.board');
+		let data=[]
+		data.write="nav-item"
+		data.board="active"
+		data.trash="nav-item"
+		data.setting="nav-item"
+		return view.render('user.board', { notes: data });
 	}
 }
 
