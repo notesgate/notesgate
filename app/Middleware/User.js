@@ -10,10 +10,9 @@ class User {
 	 * @param {Function} next
 	 */
 	async handle({ request, response, auth }, next) {
-		if (!auth.email) {
-			return response.redirect('/login')
+		if (!auth.user) {
+			return response.redirect('/login');
 		}
-
 		await next()
 	}
 }

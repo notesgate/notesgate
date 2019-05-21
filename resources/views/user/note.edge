@@ -8,57 +8,41 @@
 <div id="content">
 	<div class="col-lg-8 col-md-10 col-sm-10 align-center">
 		<div class="jumbotron color-white">
-			<h1 class="display-4">Hello, world!</h1>
-			<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-				to
-				featured content or information.</p>
-			<hr class="my-4">
-			<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-			<button type="button" id="sidebarCollapse" class="btn btn-info">
-				<span>Toggle Sidebar</span>
-			</button>
-		</div>
-		<div class="col-lg-12 text-align-center">
-			<div class="btn-group" role="group" aria-label="Basic example">
-				<button type="button" class="btn-circle-100 btn-secondary">Left</button>
-				<button type="button" class="btn-circle-100 btn-secondary">Middle</button>
-				<button type="button" class="btn-circle-100 btn-secondary">Middle</button>
-				<button type="button" class="btn-circle-100 btn-secondary">Middle</button>
-				<button type="button" class="btn-circle-100 btn-secondary">Right</button>
+			<h1 class="note title-note text-content display-4 focus-content" data-note="title">
+				{{note[0].title}}
+			</h1>
+			<p class="note lable-note text-content lead" data-note="lable">
+				@each(lable in note[0].lable)
+				#{{lable}}
+				@endeach
+			</p>
+			<hr class="my-2">
+			<p class="note decs-note text-content" data-note="desc">{{note[0].desc}}</p>
+			<div class="section">
+				<p class="note text-note text-content" data-note="section-text">
+					@each(section in note[0].section)
+					@if(section.flag=="section-text")
+					{{section.val}}
+					@elseif(section.flag=="section-img")
+					{{section.val}}
+					@else
+					{{section.val}}
+					@endif
+					@endeach
+					@if(note[0].own=="true")
+					<div class="float-button-save col-md-8">
+						<a href="http://127.0.0.1:3333/note/write/{{note[0]._id}}" target="_self" type="button"
+							id="buttonEdit" class="btn btn-info">
+							<span>Edit</span>
+						</a>
+					</div>
+					@endif
+				</p>
 			</div>
 		</div>
-
 	</div>
-
-	<nav id="right-menu">
-		<div class="spawn-tbody"></div>
-		<table class=buttons-editor-menu>
-			<tbody>
-				<tr>
-					<td><button type="button">A</button></td>
-				</tr>
-				<tr>
-					<td><button type="button">B</button></td>
-				</tr>
-				<tr>
-					<td><button type="button">C</button></td>
-				</tr>
-				<tr>
-					<td><button type="button">D</button></td>
-				</tr>
-				<tr>
-					<td><button type="button">E</button></td>
-				</tr>
-			</tbody>
-		</table>
-		<div class="spawn-tbody"></div>
-
-	</nav>
-
 </div>
-
 @endsection
-
 @section('script')
-{{ script('assets/components/right-menu/js/right-menu.js') }}
+{{ script('assets/components/note-write/js/note-edit.js') }}
 @endsection
