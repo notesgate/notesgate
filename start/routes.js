@@ -29,23 +29,17 @@ Route.group(() => {
 	Route.post('/save', 'NoteController.save')
 }).prefix('/note')//.middleware(['user'])
 
-
 Route.group(() => {
 	Route.get('/', 'LoginController.index')
 	Route.post('/store', 'LoginController.store').validator('Login')
 	Route.post('/logout', 'LoginController.destroy')
 }).prefix('/login')
 
-
 Route.group(() => {
 	Route.get('/', 'RegisterController.create')
 	Route.post('/store', 'RegisterController.store').validator('Register')
 	Route.post('/confirm', 'RegisterController.update')
 }).prefix('/register')
-
-
-
-
 
 Route.group(() => {
 	Route.on('/mail').render('email.welcome')
