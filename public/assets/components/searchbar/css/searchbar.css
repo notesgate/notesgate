@@ -1,13 +1,17 @@
 #searchbar {
-	position: fixed;
-	/* Make it stick/fixed */
-	top: 0;
-
-	z-index: 100;
+	position: relative;
+	margin: auto;
+	z-index: 1000;
 	transition: top 0.5s;
-	width: inherit;
+	height: 100px;
+	background-color: none;
 }
 
 .display-none {
 	display: none;
+}
+
+#inSearchbar{
+	height: 50px;
+	border: none;
 }
