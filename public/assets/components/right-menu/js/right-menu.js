@@ -1,20 +1,13 @@
 $(document).ready(function () {
-
-	// $('#dismiss, .overlay').on('click', function () {
-	// 	$('#right-menu').removeClass('active');
-	// 	$('.overlay').fadeOut();
-	// });
-
-	$('#sidebarCollapse').on('click', function () {
-		let width = window.getComputedStyle(document.getElementById("right-menu")).width;
-		console.log(width);
-
-		if (window.getComputedStyle(document.getElementById("right-menu")).right === "0px") {
-			document.getElementById("right-menu").style.right = "-" + width;
-		} else {
-			document.getElementById("right-menu").style.right = "0px";
+	var count=0;
+	$('.menu-editor').on('click', function (e) {
+		if($($(e.target).closest('DIV')).data('flag')=="open"){
+			$($(e.target).closest('DIV')).removeClass('open');
+			$($(e.target).closest('DIV')).data('flag',"close");
+		}else{
+			$($(e.target).closest('DIV')).addClass('open');
+			$($(e.target).closest('DIV')).data('flag',"open")
 		}
-		// console.log(window.getComputedStyle(document.getElementById("right-menu")).right);
-
+		
 	});
 });
