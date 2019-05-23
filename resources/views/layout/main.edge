@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
-  <head>
+
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="Chameleon Admin is a modern Bootstrap 4 webapp &amp; admin dashboard html template with a large number of components, elegant design, clean and organized code.">
-    <meta name="keywords" content="admin template, Chameleon admin template, dashboard template, gradient admin template, responsive admin template, webapp, eCommerce dashboard, analytic dashboard">
+    <meta name="description"
+        content="Chameleon Admin is a modern Bootstrap 4 webapp &amp; admin dashboard html template with a large number of components, elegant design, clean and organized code.">
+    <meta name="keywords"
+        content="admin template, Chameleon admin template, dashboard template, gradient admin template, responsive admin template, webapp, eCommerce dashboard, analytic dashboard">
     <meta name="author" content="ThemeSelect">
     <title>NotesGate</title>
     <link rel="apple-touch-icon" href="theme-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="theme-assets/images/ico/favicon.ico">
-	
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700"
+        rel="stylesheet">
     <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
     {{ style('assets/theme/css/bootstrap.css')}}
 
@@ -21,136 +26,28 @@
     {{ style('assets/theme/chameleon/theme-assets/css/core/menu/menu-types/vertical-menu.css')}}
     {{ style('assets/theme/chameleon/theme-assets/css/core/colors/palette-gradient.css')}}
     {{ style('assets/theme/chameleon/theme-assets/css/pages/dashboard-ecommerce.css')}}
-   
+
     {{ style('assets/global/css/app.css')}}
     {{ style('assets/global/css/media.css')}}
     {{ style('assets/components/leftbar/css/leftbar.css')}}
 
-	  @!section('style')
+    @!section('style')
 
 </head>
-  <body class="vertical-layout vertical-menu 2-columns menu-expanded" data-open="click" data-menu="vertical-menu" data-color="bg-chartbg" data-col="2-columns">
+
+<body class="vertical-layout vertical-menu 2-columns menu-expanded" data-open="click" data-menu="vertical-menu"
+    data-color="bg-chartbg" data-col="2-columns">
 
 
 
-	@include('layout._leftbar')
-	@!section('content')
-
-    <div class="customizer border-left-blue-grey border-left-lighten-4 d-none d-xl-block"><a class="customizer-close" href="#"><i class="ft-x font-medium-3"></i></a><a class="customizer-toggle bg-primary box-shadow-3" href="#" id="customizer-toggle-setting"><i class="ft-settings font-medium-3 spinner white"></i></a><div class="customizer-content p-2">
-      <h5 class="mt-1 mb-1 text-bold-500">Navbar Color Options</h5>
-      <div class="navbar-color-options clearfix">
-          <div class="gradient-colors mb-1 clearfix">
-              <div class="bg-gradient-x-purple-blue navbar-color-option" data-bg="bg-gradient-x-purple-blue" title="bg-gradient-x-purple-blue"></div>
-              <div class="bg-gradient-x-purple-red navbar-color-option" data-bg="bg-gradient-x-purple-red" title="bg-gradient-x-purple-red"></div>
-              <div class="bg-gradient-x-blue-green navbar-color-option" data-bg="bg-gradient-x-blue-green" title="bg-gradient-x-blue-green"></div>
-              <div class="bg-gradient-x-orange-yellow navbar-color-option" data-bg="bg-gradient-x-orange-yellow" title="bg-gradient-x-orange-yellow"></div>
-              <div class="bg-gradient-x-blue-cyan navbar-color-option" data-bg="bg-gradient-x-blue-cyan" title="bg-gradient-x-blue-cyan"></div>
-              <div class="bg-gradient-x-red-pink navbar-color-option" data-bg="bg-gradient-x-red-pink" title="bg-gradient-x-red-pink"></div>
-          </div>
-          <div class="solid-colors clearfix">
-              <div class="bg-primary navbar-color-option" data-bg="bg-primary" title="primary"></div>
-              <div class="bg-success navbar-color-option" data-bg="bg-success" title="success"></div>
-              <div class="bg-info navbar-color-option" data-bg="bg-info" title="info"></div>
-              <div class="bg-warning navbar-color-option" data-bg="bg-warning" title="warning"></div>
-              <div class="bg-danger navbar-color-option" data-bg="bg-danger" title="danger"></div>
-              <div class="bg-blue navbar-color-option active" data-bg="bg-blue" title="blue"></div>
-          </div>
-      </div>
-      <hr>
-      <h5 class="my-1 text-bold-500">Layout Options</h5>
-      <div class="row">
-          <div class="col-12">
-              <div class="d-inline-block custom-control custom-radio col-4">
-                  <input type="radio" class="custom-control-input bg-primary" name="layouts" id="fixed-layout">
-                  <label class="custom-control-label" for="fixed-layout">Fixed</label>
-              </div>
-              <div class="d-inline-block custom-control custom-radio">
-                  <input type="radio" class="custom-control-input bg-primary" name="layouts" id="boxed-layout">
-                  <label class="custom-control-label" for="boxed-layout">Boxed</label>
-              </div>
-          </div>
-      </div>
-      <hr>
-      <h5 class="mt-1 mb-1 text-bold-500">Sidebar menu Background</h5>
-      <div class="row sidebar-color-options ml-0">
-          <label for="sidebar-color-option" class="card-title font-medium-2 mr-2 mb-0">White Mode</label>
-          <div class="text-center mb-0">
-              <input type="checkbox" id="sidebar-color-option" class="switchery" data-size="xs" data-switchery="true" style="display: none;"><span class="switchery switchery-xsmall switchery-default" style="box-shadow: rgb(250, 98, 107) 0px 0px 0px 9px inset; transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s; background-color: rgb(250, 98, 107); border-color: rgb(250, 98, 107);"><small style="left: 12px; transition: background-color 0.4s ease 0s, left 0.2s ease 0s; background-color: rgb(255, 255, 255);"></small></span>
-          </div>
-          <label for="sidebar-color-option" class="card-title font-medium-2 ml-2 mb-0">Dark Mode</label>
-      </div>
-      <hr>
-      <!--Sidebar Background Image Starts-->
-      <h5 class="mt-1 mb-1 text-bold-500">Sidebar Background Image</h5>
-      <div class="cz-bg-image row">
-          <div class="col mb-2">
-              <img src="../../theme-assets/images/backgrounds/04.jpg" class="rounded sidiebar-bg-img" width="50" height="100" alt="background image">
-          </div>
-          <div class="col mb-3">
-              <img src="../../theme-assets/images/backgrounds/01.jpg" class="rounded sidiebar-bg-img" width="50" height="100" alt="background image">
-          </div>
-          <div class="col mb-3">
-              <img src="../../theme-assets/images/backgrounds/02.jpg" class="rounded sidiebar-bg-img" width="50" height="100" alt="background image">
-          </div>
-          <div class="col mb-3">
-              <img src="../../theme-assets/images/backgrounds/05.jpg" class="rounded sidiebar-bg-img" width="50" height="100" alt="background image">
-          </div>
-      </div>
-      <!--Sidebar Background Image Ends-->
-      <!--Sidebar BG Image Toggle Starts-->
-      <div class="sidebar-image-visibility">
-          <div class="row ml-0">
-              <label for="toggle-sidebar-bg-img" class="card-title font-medium-2 mr-2 mb-0">Hide Image</label>
-              <div class="text-center mb-0">
-                  <input type="checkbox" id="toggle-sidebar-bg-img" class="switchery" data-size="xs" checked="" data-switchery="true" style="display: none;"><span class="switchery switchery-xsmall switchery-default" style="background-color: rgb(250, 98, 107); border-color: rgb(250, 98, 107); box-shadow: rgb(250, 98, 107) 0px 0px 0px 9px inset; transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;"><small style="left: 12px; background-color: rgb(255, 255, 255); transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small></span>
-              </div>
-              <label for="toggle-sidebar-bg-img" class="card-title font-medium-2 ml-2 mb-0">Show Image</label>
-          </div>
-      </div>
-      <!--Sidebar BG Image Toggle Ends-->
-      <hr>
-      <div class="row mb-1">
-          <div class="col-12 text-center">
-              <!-- Place this tag where you want the button to render. -->
-              <iframe src="https://buttons.github.io/buttons.html#href=https%3A%2F%2Fgithub.com%2Fthemeselect%2Fchameleon-free-bootstrap-admin-template&amp;title=&amp;aria-label=Star%20themeselect%2Fchameleon-free-bootstrap-admin-template%20on%20GitHub&amp;data-icon=octicon-star&amp;data-text=Star&amp;data-show-count=true" allowtransparency="true" scrolling="no" frameborder="0" style="width: 49px; height: 20px; border: none;" name="href=https%3A%2F%2Fgithub.com%2Fthemeselect%2Fchameleon-free-bootstrap-admin-template&amp;title=&amp;aria-label=Star%20themeselect%2Fchameleon-free-bootstrap-admin-template%20on%20GitHub&amp;data-icon=octicon-star&amp;data-text=Star&amp;data-show-count=true"></iframe>
-              <!-- Place this tag where you want the button to render. -->
-              <iframe src="https://buttons.github.io/buttons.html#href=https%3A%2F%2Fgithub.com%2Fthemeselect%2Fchameleon-free-bootstrap-admin-template%2Ffork&amp;title=&amp;aria-label=Fork%20themeselect%2Fchameleon-free-bootstrap-admin-template%20on%20GitHub&amp;data-icon=octicon-repo-forked&amp;data-text=Fork&amp;data-show-count=true" allowtransparency="true" scrolling="no" frameborder="0" style="width: 48px; height: 20px; border: none;" name="href=https%3A%2F%2Fgithub.com%2Fthemeselect%2Fchameleon-free-bootstrap-admin-template%2Ffork&amp;title=&amp;aria-label=Fork%20themeselect%2Fchameleon-free-bootstrap-admin-template%20on%20GitHub&amp;data-icon=octicon-repo-forked&amp;data-text=Fork&amp;data-show-count=true"></iframe>
-          </div>
-      </div>
-      <div class="row mb-1">
-          <div class="col">
-              <a href="https://themeselection.com/products/chameleon-admin-free-bootstrap-dashboard-template/" class="btn btn-info btn-block btn-glow" target="_blank">Download FREE!</a>
-          </div>
-          <div class="col">
-              <a href="https://themeselection.com/" class="btn btn-primary btn-block box-shadow-1" target="_blank">More Themes</a>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-12 text-center">
-        <button id="twitter" class="btn btn-social-icon btn-twitter sharrre mr-1"><i class="la la-twitter"></i></button>
-        <button id="facebook" class="btn btn-social-icon btn-facebook sharrre mr-1"><i class="la la-facebook"></i></button>
-        <button id="google" class="btn btn-social-icon btn-google sharrre"><i class="la la-google"></i></button>
-      </div>
-      </div>
-  </div>
-      </div>
-    <!-- ////////////////////////////////////////////////////////////////////////////-->
-
-{{--  
-    <footer class="footer footer-static footer-light navbar-border navbar-shadow">
-      <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span class="float-md-left d-block d-md-inline-block">2018  &copy; Copyright <a class="text-bold-800 grey darken-2" href="https://themeselection.com" target="_blank">ThemeSelection</a></span>
-        <ul class="list-inline float-md-right d-block d-md-inline-blockd-none d-lg-block mb-0">
-          <li class="list-inline-item"><a class="my-1" href="https://themeselection.com/" target="_blank"> More themes</a></li>
-          <li class="list-inline-item"><a class="my-1" href="https://themeselection.com/support" target="_blank"> Support</a></li>
-          <li class="list-inline-item"><a class="my-1" href="https://themeselection.com/products/chameleon-admin-modern-bootstrap-webapp-dashboard-html-template-ui-kit/" target="_blank"> Purchase</a></li>
-        </ul>
-      </div>
-    </footer>  --}}
-
+    @include('layout._leftbar')
+    @!section('content')
+    
     {{ script('assets/theme/chameleon/theme-assets/vendors/js/vendors.min.js') }}
     {{ script('assets/theme/chameleon/theme-assets/js/core/app-menu-lite.js') }}
     {{ script('assets/theme/chameleon/theme-assets/js/core/app-lite.js') }}
-	  @!section('script')
+    @!section('script')
 
-  </body>
+</body>
+
 </html>
