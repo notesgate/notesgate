@@ -1,17 +1,18 @@
 @layout('layout.main')
 @section('style')
-{{ style('assets/components/right-menu/css/right-menu.css') }}
 {{ style('assets/components/button/css/circle.css') }}
+{{ style('assets/components/right-menu/css/right-menu.css') }}
 {{ style('assets/components/note-write/css/note-write.css') }}
 @endsection
 
 @section('content')
 <div id="content">
-	<div class="col-sm-12 col-md-12 col-lg-12">
+	<div class="center col-sm-10 col-md-10 col-lg-10">
 		<div id="editor">
 			<div class="card">
 				<div class="card-header">
-					<h1 class="card-title note title-note text-content display-4" contenteditable="true" data-note="title">
+					<h1 class="card-title note title-note text-content display-4" contenteditable="true"
+						data-note="title">
 						@if(note[0].title)
 						{{note[0].title}}
 						@else
@@ -38,20 +39,20 @@
 							</ul>
 						</div>
 						<p class="note text-note text-content " contenteditable="true" data-note="section-text">
-								@if(note[0].section)
-								@each(section in note[0].section)
-								@if(section.flag=="section-text")
-								{{section.val}}
-								@elseif(section.flag=="section-img")
-								{{section.val}}
-								@else
-								{{section.val}}
-								@endif
-								@endeach
-								@else
-								Section
-								@endif
-							</p>
+							@if(note[0].section)
+							@each(section in note[0].section)
+							@if(section.flag=="section-text")
+							{{section.val}}
+							@elseif(section.flag=="section-img")
+							{{section.val}}
+							@else
+							{{section.val}}
+							@endif
+							@endeach
+							@else
+							Section
+							@endif
+						</p>
 					</div>
 					<div class="card-body">
 						<div class="section">
@@ -64,69 +65,47 @@
 			</div>
 		</div>
 
-		
-	</div>
-	<div class="col-lg-8 col-md-10 col-sm-10 align-center">
+		<div class="col-lg-8 col-md-10 col-sm-10 align-center">
 
-		<div class="btn-group" role="group" aria-label="Basic example">
-			<button type="button" class="btn-circle-100 btn-secondary note-btn-section">section</button>
-			<button type="button" class="btn-circle-100 btn-secondary note-btn-image">image</button>
-			<!-- <button type="button" class="btn-circle-100 btn-secondary">Middle</button>
-				<button type="button" class="btn-circle-100 btn-secondary">Middle</button>
-				<button type="button" class="btn-circle-100 btn-secondary">Right</button> -->
+			<div class="btn-group" role="group" aria-label="Basic example">
+				<button type="button" class="btn-circle-100 btn-secondary note-btn-section">section</button>
+				<button type="button" class="btn-circle-100 btn-secondary note-btn-image">image</button>
+				<!-- <button type="button" class="btn-circle-100 btn-secondary">Middle</button>
+						<button type="button" class="btn-circle-100 btn-secondary">Middle</button>
+						<button type="button" class="btn-circle-100 btn-secondary">Right</button> -->
+			</div>
+			<div class="float-button-save col-md-8">
+				<button type="button" id="buttonSave" class="btn btn-info">
+					<span>Save</span>
+				</button>
+			</div>
+
 		</div>
-		<div class="float-button-save col-md-8">
-			<button type="button" id="sidebarCollapse" class="btn btn-info">
-				<span>Toggle Sidebar</span>
-			</button>
-			<button type="button" id="buttonSave" class="btn btn-info">
-				<span>Save</span>
-			</button>
-		</div>
-
 	</div>
-	<div id="block-menu" class="">
-
-	</div>
-	<nav id="right-menu">
-		<div class="spawn-tbody"></div>
-		<table class=buttons-editor-menu>
-			<tbody>
-				<tr>
-					<td>
-
-						<div id="menu-a" data-flag="show" onclick="fontStyle(this)" type="button">A</div>
-
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div data-flag="show" onclick="openTemp(this,'menu-b')" type="button">B</div>
-						<div id="menu-b">
-
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td><button data-flag="show" onclick="openTemp(this)" type="button">C</button></td>
-				</tr>
-				<tr>
-					<td><button data-flag="show" onclick="openTemp(this)" type="button">D</button></td>
-				</tr>
-				<tr>
-					<td><button data-flag="show" onclick="openTemp(this)" type="button">E</button></td>
-				</tr>
-			</tbody>
-		</table>
-		<div class="spawn-tbody"></div>
-
-	</nav>
-
 </div>
-
+<div>
+	<div id="menu-1" data-flag="close" class="editor-menu customizer border-left-blue-grey border-left-lighten-4 d-none d-xl-block">
+		<a class="menu-editor customizer-toggle bg-primary box-shadow-3" href="#" id="customizer-toggle-setting">
+			<i class="ft-settings font-medium-3 spinner white"></i>
+		</a>
+	</div>
+	<div id="menu-2" data-flag="close" class="editor-menu customizer border-left-blue-grey border-left-lighten-4 d-none d-xl-block">
+		<a class="menu-editor customizer-toggle bg-primary box-shadow-3" href="#" id="customizer-toggle-setting">
+			<i class="ft-settings font-medium-3 spinner white"></i>
+		</a>
+	</div>
+	<div id="menu-3" data-flag="close" class="editor-menu customizer border-left-blue-grey border-left-lighten-4 d-none d-xl-block">
+		<a class="menu-editor customizer-toggle bg-primary box-shadow-3" href="#" id="customizer-toggle-setting">
+			<i class="ft-settings font-medium-3 spinner white"></i>
+		</a>
+	</div>
+</div>
 @endsection
 
 @section('script')
-{{ script('assets/components/right-menu/js/right-menu.js') }}
 {{ script('assets/components/note-write/js/note-write.js') }}
+{{ script('core/showdown/dist/showdown.js') }}
+{{ script('core/markdown/init.js') }}
+{{ script('assets/components/right-menu/js/right-menu.js') }}
+
 @endsection
