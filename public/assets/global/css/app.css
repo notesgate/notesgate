@@ -18,3 +18,7 @@
 #inSearchbar:focus {
     outline: none !important;
 }
+
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+}

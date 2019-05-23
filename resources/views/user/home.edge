@@ -10,87 +10,15 @@
 
 		<div class="row">
 			<div class="card-columns">
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little additional content. This content is a little additional content. This content is a little additional content. This content is a little bit longer.</p>
+				@each(post in notes)
+					<div id="{{post._id}}" data-note='{{post}}' onclick="read(this)" class="card pull-up ecom-card-1 bg-white">
+					<img class="card-img-top" src="{{ assetsUrl('image/pyramid.png') }}" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title that wraps to a new line</h5>
+						<p class="card-text">{{post.section[0].val}}</p>
+						</div>
 					</div>
-				</div>
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new lCard title that wraps to a new lCard title that wraps to a new lCard title that wraps to a new lCard title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-								additional content. This content is a little badditional content. This content is a little badditional content. This content is a little badditional content. This content is a little badditional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
+				@endeach
 
 			</div>
 		</div>
