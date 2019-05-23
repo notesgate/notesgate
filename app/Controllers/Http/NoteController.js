@@ -14,11 +14,9 @@ class NoteController {
 			const note = await Note.where({ _id: params.note }).fetch()
 			let data = note.toJSON();
 			data[0].lable = data[0].lable.substr(1, data[0].lable.length - 2).split(',')
-			console.log(data);
-
-			return view.render('user.write', { note: data });
+			
+			return view.render('user.write', { note: data});
 		} else {
-			console.log("edit false");
 
 			return view.render('user.write', { 'note': 'pyramid.png' });
 		}
@@ -94,5 +92,6 @@ class NoteController {
 		});
 		// await note.save()
 	}
+
 }
 module.exports = NoteController
