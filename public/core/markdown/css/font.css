@@ -1,0 +1,49 @@
+/* FONT STYLE */
+.italic{
+    font-style: italic !important;
+}
+.bold{
+    font-weight: bold !important;
+}
+
+.underline{
+    text-decoration: underline !important;
+}
+
+/* FONT SIZE */
+.font-size-10{
+    font-size: 10pt !important;
+}
+.font-size-11{
+    font-size: 11pt !important;
+}
+.font-size-12{
+    font-size: 12pt !important;
+}
+.font-size-13{
+    font-size: 13pt !important;
+}
+.font-size-14{
+    font-size: 14pt !important;
+}
+.font-size-15{
+    font-size: 15pt !important;
+}
+.font-header-1{
+    font-size: 	32px !important;
+}
+.font-header-2{
+    font-size: 	24px !important;
+}
+.font-header-3{
+    font-size: 	18.72px !important;
+}
+.font-header-4{
+    font-size: 	16px !important;
+}
+.font-header-5{
+    font-size: 	13.28px !important;
+}
+.font-header-6{
+    font-size: 	12px !important;
+}
