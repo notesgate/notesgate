@@ -1,48 +1,82 @@
 @layout('layout.main')
 @section('style')
-{{ style('assets/components/right-menu/css/right-menu.css') }}
-{{ style('assets/components/button/css/circle.css') }}
+{{ style('assets/components/note-write/css/note-write.css') }}
+{{ style('core/markdown/css/font.css') }}
+
 @endsection
 
 @section('content')
 <div id="content">
-	<div class="col-lg-8 col-md-10 col-sm-10 align-center">
-		<div class="jumbotron color-white">
-			<h1 class="note title-note text-content display-4 focus-content" data-note="title">
-				{{note[0].title}}
-			</h1>
-			<p class="note lable-note text-content lead" data-note="lable">
-				@each(lable in note[0].lable)
-				#{{lable}}
-				@endeach
-			</p>
-			<hr class="my-2">
-			<p class="note decs-note text-content" data-note="desc">{{note[0].desc}}</p>
-			<div class="section">
-				<p class="note text-note text-content" data-note="section-text">
-					@each(section in note[0].section)
-					@if(section.flag=="section-text")
-					{{section.val}}
-					@elseif(section.flag=="section-img")
-					{{section.val}}
-					@else
-					{{section.val}}
-					@endif
-					@endeach
-					@if(note[0].own=="true")
-					<div class="float-button-save col-md-8">
-						<a href="http://127.0.0.1:3333/note/write/{{note[0]._id}}" target="_self" type="button"
-							id="buttonEdit" class="btn btn-info">
-							<span>Edit</span>
-						</a>
+		<div class="center col-sm-10 col-md-10 col-lg-10">
+			<div id="editor">
+				<div class="card">
+					<div class="card-header">
+						<h1 class="card-title note title-note text-content display-4"
+							data-note="title"></h1>
+							@if(note[0].title)
+							<p class="init" display="hidden" data-role="text" data-val="{{note[0].title}}"></p>
+							@else
+							<p class="init" display="hidden" data-role="text" data-val="Title"></p>
+							@endif
+
+						<p class="note lable-note text-content lead" data-note="lable">
+							@if(note[0].lable)
+							@each(lable in note[0].lable)
+							#{{lable}}
+							@endeach
+							@else
+							#Lable
+							@endif
+						</p>
+					</div>
+				</div>
+				@each(section in note[0].section)
+				<div class="card">
+					@if(section.flag=='section-text')
+					<div class="card-content">
+							<div class="card-header">
+								<div class="heading-elements">
+									<ul class="list-inline mb-0">
+										<li><a data-action="close"><i class="ft-x"></i></a></li>
+									</ul>
+								</div>
+								<p class="note text-note text-content " data-note="section-text">
+								</p>
+								<p class="init" display="hidden" data-role="text" data-val="{{section.val[0]}}"></p>
+
+							</div>
+							<div class="card-body">
+								<div class="section">
+									<p class="note text-note text-content" data-note="section-text">
+									</p>
+									<p class="init" display="hidden" data-role="text" data-val="{{section.val[1]}}"></p>
+
+								</div>
+							</div>
+						</div>
+					@elseif(section.flag=='section-image')	
+					<div class="section section-image">
+						<img data-note="section-image" class="note" src="{{assetsUrl('notes/images/'+note[0].user_id+section.val)}}">
 					</div>
 					@endif
-				</p>
+				</div>
+				@endeach
+			
 			</div>
 		</div>
+		@if(note[0].own=="true")
+			<div class="float-button-save col-md-8">
+				<a href="http://127.0.0.1:3333/note/write/{{note[0]._id}}" target="_self" type="button"
+				id="buttonEdit" class="btn btn-info">
+				<span>Edit</span>
+				</a>
+			</div>
+		@endif
 	</div>
-</div>
+	
 @endsection
 @section('script')
+{{ script('core/showdown/dist/showdown.js') }}
+{{ script('core/markdown/js/init.js') }}
 {{ script('assets/components/note-write/js/note-edit.js') }}
 @endsection
