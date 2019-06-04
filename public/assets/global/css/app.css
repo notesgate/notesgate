@@ -10,7 +10,9 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-
+.content-center{
+	text-align: center;
+}
 .shadow-5{
 	box-shadow: 0px 1px 15px 5px rgba(0,0,0,0.2);
 	transition: 0.3s;
@@ -23,3 +25,5 @@
 [contenteditable]:focus {
     outline: 0px solid transparent;
 }
+
+
