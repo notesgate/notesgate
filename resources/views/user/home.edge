@@ -11,15 +11,14 @@
 		<div class="row">
 			<div class="card-columns">
 				@each(post in notes)
-					<div id="{{post._id}}" data-note='{{post}}' onclick="read(this)" class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="{{ assetsUrl('image/pyramid.png') }}" alt="Card image cap">
+					<div id="{{post._id}}" data-note='{{post}}' onclick="read(this)" class="card pull-up bg-white">
+						<img class="card-img-top" src="{{ assetsUrl('images/pyramid.png') }}" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Card title that wraps to a new line</h5>
 						<p class="card-text">{{post.section[0].val}}</p>
 						</div>
 					</div>
 				@endeach
-
 			</div>
 		</div>
 
