@@ -39,6 +39,8 @@ $(document).ready(function () {
 				console.log('tmpdata :', tmpdata);
 			}else if (attr === "section-image") {
 				let uniq = new Date().getTime()+counterUniq++;
+				console.log('temp.id :', temp.id);
+				console.log('temp.id :', temp);
 				let ext= getExtention("input_"+temp.id);
 				let data = {
 					flag: attr,
@@ -58,6 +60,7 @@ $(document).ready(function () {
 				note[attr] = temp;
 			}
 		}
+		console.log('saveTo :', note);
 		$.post('/note/save', note, data => console.log(data));
 	});
 
