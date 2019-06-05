@@ -1,8 +1,11 @@
 .float-button-save {
 	position: fixed;
 	bottom: 40px;
+	right: 28px;
 }
-
+.float-right{
+	float: right;
+}
 .show-menu {
 	position: relative;
 	display: flex;
