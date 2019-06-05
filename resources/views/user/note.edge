@@ -66,10 +66,7 @@
 		</div>
 		@if(note[0].own=="true")
 			<div class="float-button-save col-md-8">
-				<a href="http://127.0.0.1:3333/note/write/{{note[0]._id}}" target="_self" type="button"
-				id="buttonEdit" class="btn btn-info">
-				<span>Edit</span>
-				</a>
+				<button data-href="http://127.0.0.1:3333/note/write/{{note[0]._id}}" id="buttonEdit" type="button" class="float-right btn btn-primary btn-min-width mr-1 mb-1">Edit</button>
 			</div>
 		@endif
 	</div>
