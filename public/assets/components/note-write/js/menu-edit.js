@@ -1,8 +1,6 @@
 $(document).ready(function () {
     var counter=img;
-    if(counter===undefined){
-        counter=0;
-    }
+
     function makeImageSection() {
 
         let div1 = document.createElement('DIV');
