@@ -1,9 +1,9 @@
 $(document).ready(function () {
 	var count=0;
-	$('.menu-editor').on('click', function (e) {
+	// $('.menu-editor').on('click', function (e) {
 
 		
-	});
+	// });
 	$('.menu-side').on('click', function (e) {
 		let menu=e.target.getAttribute('data-menu');
 		switch (menu) {
@@ -42,6 +42,14 @@ $(document).ready(function () {
 				break;
 			case "superscript":
 				textStyle("superscript");
+			case "indent":
+				inOutdent("indent");
+				break;
+			case "outdent":
+				inOutdent("outdent");
+				break;
+			case "color":
+				color(e.target.getAttribute('data-color'));
 				break;
 			default:
 				break;
