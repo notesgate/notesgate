@@ -1,23 +1,37 @@
 $(document).ready(function () {
-	
+	// href=""
+	$('#buttonEdit').on('click',function(e){
+		window.location.replace(e.target.getAttribute('data-href'));
+	});
+
 	$('#menu-1').on('click', function () {
-		close('font-menu');
-		if($('#font-menu').data('action')=="close"){
-			document.getElementById('font-menu').style.right="60px";
-			$('#font-menu').data('action',"open");
+		close('font-style');
+		if($('#font-style').data('action')=="close"){
+			document.getElementById('font-style').style.right="60px";
+			$('#font-style').data('action',"open");
 		}else{
-			document.getElementById('font-menu').style.right="-100px";
-			$('#font-menu').data('action',"close");
+			document.getElementById('font-style').style.right="-100px";
+			$('#font-style').data('action',"close");
 		}
 	});
 	$('#menu-2').on('click', function () {
-		close('color-menu');
-		if($('#color-menu').data('action')=="close"){
-			document.getElementById('color-menu').style.right="60px";
-			$('#color-menu').data('action',"open");
+		close('paragraf-style');
+		if($('#paragraf-style').data('action')=="close"){
+			document.getElementById('paragraf-style').style.right="60px";
+			$('#paragraf-style').data('action',"open");
 		}else{
-			document.getElementById('color-menu').style.right="-100px";
-			$('#color-menu').data('action',"close");
+			document.getElementById('paragraf-style').style.right="-100px";
+			$('#paragraf-style').data('action',"close");
+		}
+	});
+	$('#menu-3').on('click', function () {
+		close('color-style');
+		if($('#color-style').data('action')=="close"){
+			document.getElementById('color-style').style.right="60px";
+			$('#color-style').data('action',"open");
+		}else{
+			document.getElementById('color-style').style.right="-100px";
+			$('#color-style').data('action',"close");
 		}
 	});
 
