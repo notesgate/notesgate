@@ -1,13 +1,16 @@
 /* FONT STYLE */
 .italic{
     font-style: italic !important;
+    display: inline-flex;
 }
 .bold{
     font-weight: bold !important;
+    display: inline-flex;
 }
 
 .underline{
     text-decoration: underline !important;
+    display: inline-flex;
 }
 
 /* FONT SIZE */

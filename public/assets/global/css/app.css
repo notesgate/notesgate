@@ -25,5 +25,15 @@
 [contenteditable]:focus {
     outline: 0px solid transparent;
 }
+*[contenteditable]{
+	display: block !important;
+}
+.title-section{
+	display: inline-block !important;
+}
+
+.full-width{
+	width: 100%;
+}
 
 
