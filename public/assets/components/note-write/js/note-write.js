@@ -34,7 +34,27 @@ $(document).ready(function () {
 
 
 	$('.note-btn-section').on('click', function () {
-		let html = '<p class="note text-note text-content" contenteditable="true" data-note="section-text">New Section</p>';
+		let html = '<div class="card">';
+			html+='<div class="card-content">';
+			html+='<div class="card-header">';
+			html+='<div class="heading-elements">';
+			html+='<ul class="list-inline mb-0">';
+			html+='<li><a data-action="close"><i class="ft-x"></i></a></li>';
+			html+='</ul>';
+			html+='</div>';
+			html+='<p class="note text-note text-content " contenteditable="true" data-note="section-text">';
+			html+='Section';
+			html+='</p>';
+			html+='</div>';
+			html+='<div class="card-body">';
+			html+='<div class="section">';
+			html+='<p class="note text-note text-content " contenteditable="true" data-note="section-text">';
+			html+='ss';
+			html+='</p>';
+			html+='</div>';
+			html+='</div>';
+			html+='</div>';
+			html+='</div>';
 		$('#editor').append(html);
 	});
 
@@ -44,8 +64,10 @@ $(document).ready(function () {
 		switch (flag) {
 			case "title":
 			case "desc":
-			case "section-text": return clearText($(params)[0].innerText);
-			case "lable": return getLable(params);
+			case "section-text":
+				return clearText($(params)[0].innerText);
+			case "lable":
+				return getLable(params);
 			default:
 				break;
 		}
@@ -81,6 +103,7 @@ $(document).ready(function () {
 		$(this).removeClass('fade-menu');
 	});
 });
+
 function fontStyle(params) {
 	if ($(params).data('flag') == "show") {
 		var rect = params.getBoundingClientRect();
@@ -110,6 +133,7 @@ function fontStyle(params) {
 
 	}
 }
+
 function openTemp(params, id) {
 	if ($(params).data('flag') == "show") {
 		// $(params).parent().addClass('show-menu')

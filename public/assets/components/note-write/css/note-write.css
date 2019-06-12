@@ -22,3 +22,10 @@
 #buttonSave {
 	float: right;
 }
+
+.title-note{
+	font-size: 40px !important;
+}
+.text-note{
+	font-size: 25px !important;
+}
