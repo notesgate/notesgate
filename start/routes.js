@@ -58,6 +58,11 @@ Route.group(() => {
 	Route.get('/verify/', 'VerifyController.index')
 }).prefix('/feature')
 
+Route.group(() => { 
+	Route.get('/', 'SettingController.index')
+	Route.post('/update', 'SettingController.update')
+
+ }).prefix('/setting')
 
 Route.post('/test', 'TestController.index')
 Route.post('/show', 'TestController.show')

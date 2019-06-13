@@ -1,0 +1,123 @@
+@layout('layout.main')
+@section('style')
+{{ style('assets/components/card-note/css/card-note.css') }}
+{{ style('assets/components/searchbar/css/searchbar.css') }}
+@endsection
+
+@section('content')
+
+<div id="content" class="app-content content">
+	<div class="content-body">
+		@include('layout._searchbar')
+        
+		<div class="content-wrapper">
+        <div class="content-header row">
+            <div class="content-wrapper-before"></div>
+          <div class="content-header-center col-md-7 col-12 mb-1">
+            <h2 class="content-header-title h2s">Setting</h2>
+          </div>
+        </div>
+
+        <section id="content-types">
+            
+            <div class="row match-height">
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <h4 class="card-title">Account</h4>
+                            
+                                <form class="form">
+                                    <div class="form-body">
+                                        <div class="form-group">
+                                            <p>Email</p>
+                                            <label for="donationinput1" class="sr-only">Email</label>
+                                            <input type="email" class="form-control" id="readonlyInput" readonly="readonly" value="You can't change me. ;)">                                            
+                                        </div>
+                                        <div class="form-group">
+                                            <p>Username</p>
+                                            <label for="donationinput2" class="sr-only">Username</label>
+                                            <input type="text" class="form-control" id="readonlyInput" readonly="readonly" value="You can't change me. ;)">
+                                        </div>
+                                        <div class="form-group">
+                                            <p>Nama</p>
+                                            <label for="donationinput3" class="sr-only">Nama</label>
+                                            <input type="text" id="donationinput3" class="form-control" placeholder="Nama" name="nama">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-actions center">
+                                        <button type="submit" class="btn btn-primary">Ganti Password</button>
+                                        <br>
+                                        <br>
+                                        <button type="submit" class="btn btn-info">Save</button>
+                                    </div>
+                                </form>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <h4 class="card-title">Help</h4>
+                                <p class="card-text">Pengaturan Akun</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    Cras justo odio
+                                </li>
+                                <li class="list-group-item">
+                                    Dapibus ac facilisis in
+                                </li>
+                                <li class="list-group-item">
+                                    Morbi leo risus
+                                </li>
+                                <li class="list-group-item">
+                                    Porta ac consectetur ac
+                                </li>
+                                <li class="list-group-item">
+                                    Vestibulum at eros
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="content-body"><!-- Overview -->
+           <div class="card text-center">
+				<div class="card-header">
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">About</h5>
+					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+				<div class="card-footer text-muted">
+					Made With Loves
+				</div>
+			</div>
+                
+            </div>
+        </div>
+
+
+
+      </div>
+
+	</div>
+</div>
+@endsection
+@section('script')
+{{ script('assets/components/searchbar/js/searchbar.js') }}
+{{ script('assets/components/card-note/js/card-note.js') }}
+@endsection
