@@ -16,9 +16,16 @@
 				@each(post in notes)
 					<div id="{{post._id}}" data-note='{{post}}' onclick="read(this)" class="card pull-up bg-white">
 						@if(post.face.img)
-						<img class="card-img-top" src="{{ assetsUrl('notes/images/'+post.user_id+post.face.img) }}" alt="Card image cap">
+							<img class="card-img-top" src="{{ assetsUrl('notes/images/'+post.user_id+post.face.img) }}" alt="Card image cap">
 						@endif
 						<!--<img class="card-img-top" src="{{ assetsUrl('images/pyramid.png') }}" alt="Card image cap"> -->
+						<div class="card-footer card-footer-board">
+							<span class="tags float-right">
+								@each(lable in post.lable)
+									<span class="badge badge-pill badge-primary">{{lable}}</span>
+								@endeach
+							</span>
+						</div>
 						<div class="card-body">
 							<h5 class="note text-note text-content card-title" data-note="section-text"></h5>
 							<p class="init" display="hidden" data-role="text" data-val="{{post.title}}"></p>
@@ -26,6 +33,7 @@
 							<p class="note text-note text-content card-text" data-note="section-text"></p>
 							<p class="init" display="hidden" data-role="text" data-val="{{post.face.text}}"></p>
 						</div>
+						
 					</div>
 				@endeach
 			</div>
