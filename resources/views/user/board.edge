@@ -1,6 +1,6 @@
 @layout('layout.main')
 @section('style')
-{{ style('assets/components/card-note/css/card-note.css') }}
+{{ style('assets/components/board/css/board.css') }}
 {{ style('assets/components/searchbar/css/searchbar.css') }}
 @endsection
 @section('content')
@@ -10,88 +10,14 @@
 
 		<div class="row">
 			<div class="card-columns">
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little additional content. This content is a little additional content. This content is a little additional content. This content is a little bit longer.</p>
+				@each(board in boards)
+					<div id={{board._id}} onclick="openBoard(this)" class="card pull-up ecom-card-1 bg-white">
+						<img class="card-img-top" src="{{assetsUrl('notes/boards/'+board.image)}}" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">{{board.board}}</h5>
+						</div>
 					</div>
-				</div>
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new lCard title that wraps to a new lCard title that wraps to a new lCard title that wraps to a new lCard title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-								additional content. This content is a little badditional content. This content is a little badditional content. This content is a little badditional content. This content is a little badditional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-				<div class="card pull-up ecom-card-1 bg-white">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-							additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-
+				@endeach
 			</div>
 		</div>
 
@@ -100,5 +26,5 @@
 @endsection
 @section('script')
 {{ script('assets/components/searchbar/js/searchbar.js') }}
-{{ script('assets/components/card-note/js/card-note.js') }}
+{{ script('assets/components/board/js/board.js') }}
 @endsection
