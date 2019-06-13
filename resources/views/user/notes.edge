@@ -1,122 +1,52 @@
 @layout('layout.main')
-@section('content')
-<div id="content">
-	@include('layout._searchbar')
-	
+@section('style')
+{{ style('assets/components/card-note/css/card-note.css') }}
+{{ style('assets/components/searchbar/css/searchbar.css') }}
+{{ style('core/markdown/css/font.css') }}
+{{ style('core/markdown/css/color.css') }}
+{{ style('assets/components/board/css/board.css') }}
 
-	<div id="content-page" class="container-fluid">
-		<div class="col-lg-12">
+@endsection
+@section('content')
+<div id="content" class="app-content content" data-note="{{notes.idBoard}}">
+	<div class="content-body">
+		@include('layout._searchbar')
+
+		<div class="row">
 			<div class="card-columns">
-				<div id="note-1" data-note='{"id":"1","text":"1"}' onclick="read(this)" class="card">
-					<svg class="bd-placeholder-img card-img-top" width="100%" height="160"
-						xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-						role="img" aria-label="Placeholder: Image cap">
-						<title>Placeholder</title>
-						<rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-							dy=".3em">Image cap</text>
-					</svg>
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural
-							lead-in
-							to
-							additional content. This content is a little bit longer.</p>
+				@each(post in notes)
+					<div id="{{post._id}}" data-note='{{post}}' onclick="read(this)" class="card pull-up bg-white">
+						@if(post.face.img)
+						<img class="card-img-top" src="{{ assetsUrl('notes/images/'+post.user_id+post.face.img) }}" alt="Card image cap">
+						@endif
+						<!--<img class="card-img-top" src="{{ assetsUrl('images/pyramid.png') }}" alt="Card image cap"> -->
+						<div class="card-body">
+							<h5 class="note text-note text-content card-title" data-note="section-text"></h5>
+							<p class="init" display="hidden" data-role="text" data-val="{{post.title}}"></p>
+
+							<p class="note text-note text-content card-text" data-note="section-text"></p>
+							<p class="init" display="hidden" data-role="text" data-val="{{post.face.text}}"></p>
+						</div>
 					</div>
-				</div>
-				<div id="note-2" data-note='{"id":"1","text":"1"}' onclick="read(this)" class="card p-3">
-					<blockquote class="blockquote mb-0 card-body">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-						</p>
-						<footer class="blockquote-footer">
-							<small class="text-muted">
-								Someone famous in <cite title="Source Title">Source Title</cite>
-							</small>
-						</footer>
-					</blockquote>
-				</div>
-				<div id="note-3" data-note='{"id":"1","text":"1"}' onclick="read(this)" class="card">
-					<svg class="bd-placeholder-img card-img-top" width="100%" height="160"
-						xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-						role="img" aria-label="Placeholder: Image cap">
-						<title>Placeholder</title>
-						<rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-							dy=".3em">Image cap</text>
-					</svg>
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This card has supporting text below as a natural lead-in to
-							additional
-							content.</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					</div>
-				</div>
-				<div id="note-4" data-note='{"id":"1","text":"1"}' onclick="read(this)"
-					class="card bg-primary text-white text-center p-3">
-					<blockquote class="blockquote mb-0">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-						<footer class="blockquote-footer text-white">
-							<small>
-								Someone famous in <cite title="Source Title">Source Title</cite>
-							</small>
-						</footer>
-					</blockquote>
-				</div>
-				<div id="note-5" data-note='{"id":"1","text":"1"}' onclick="read(this)" class="card text-center">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This card has a regular title and short paragraphy of text below
-							it.
-						</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					</div>
-				</div>
-				<div id="note-6" data-note='{"id":"1","text":"1"}' onclick="read(this)" class="card">
-					<svg class="bd-placeholder-img card-img" width="100%" height="260"
-						xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-						role="img" aria-label="Placeholder: Card image">
-						<title>Placeholder</title>
-						<rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-							dy=".3em">Card image</text>
-					</svg>
-				</div>
-				<div id="note-7" data-note='{"id":"1","text":"1"}' onclick="read(this)" class="card p-3 text-right">
-					<blockquote class="blockquote mb-0">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-						</p>
-						<footer class="blockquote-footer">
-							<small class="text-muted">
-								Someone famous in <cite title="Source Title">Source Title</cite>
-							</small>
-						</footer>
-					</blockquote>
-				</div>
-				<div id="note-8" data-note='{"id":"1","text":"1"}' onclick="read(this)" class="card">
-					<svg class="bd-placeholder-img card-img" width="100%" height="260"
-						xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-						role="img" aria-label="Placeholder: Card image">
-						<title>Placeholder</title>
-						<rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-							dy=".3em">Card image</text>
-					</svg>
-				</div>
-				<div id="note-9" data-note='{"id":"1","text":"1"}' onclick="read(this)" class="card p-3 text-right">
-					<blockquote class="blockquote mb-0">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-						</p>
-						<footer class="blockquote-footer">
-							<small class="text-muted">
-								Someone famous in <cite title="Source Title">Source Title</cite>
-							</small>
-						</footer>
-					</blockquote>
-				</div>
+				@endeach
 			</div>
 		</div>
+		<div class="float-button-change ">
+			<button id="imageBoard" type="button"
+				class="float-right btn btn-primary btn-min-width mr-1 mb-1">Change</button>
+		</div>
+		<form id="formImage" class="hidden" method="POST" enctype="multipart/form-data">
+			<input id="formImageButton" type="file" name="profile_pic"/>
+		</form>
 	</div>
+	
 </div>
 @endsection
-
 @section('script')
+{{ script('core/showdown/dist/showdown.js') }}
+{{ script('core/markdown/js/init.js') }}
 {{ script('assets/components/searchbar/js/searchbar.js') }}
 {{ script('assets/components/card-note/js/card-note.js') }}
+{{ script('assets/components/board/js/board.js') }}
+
 @endsection

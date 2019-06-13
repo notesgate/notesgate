@@ -1,0 +1,22 @@
+/* TEXT COLOR */
+.text-blue{
+    color: blue;
+}
+.text-red{
+    color: red;
+}
+.text-green{
+    color: green;
+}
+.text-yellow{
+    color:yellow;
+}
+.text-magenta{
+    color: magenta;
+}
+.text-violet{
+    color: rgb(98, 0, 255);
+}
+.text-dark{
+    color: rgb(63, 63, 63);
+}
