@@ -27,6 +27,7 @@ Route.group(() => {
 	Route.get('/read/:note', 'NoteController.read')
 	Route.get('/get', 'NoteController.get')
 	Route.get('/all', 'NoteController.all')
+	Route.get('/search/:key', 'NoteController.search')
 	Route.post('/save', 'NoteController.save')
 	Route.post('/upload', 'NoteController.upload')
 }).prefix('/note').middleware(['user'])
@@ -35,6 +36,7 @@ Route.group(() => {
 	Route.get('/', 'BoardController.all')
 	Route.post('/add', 'BoardController.add')
 	Route.get('/open/:board', 'BoardController.open')
+	Route.get('/search/:key', 'BoardController.search')
 	Route.post('/upload/:id', 'BoardController.upload')
 }).prefix('/board').middleware(['user'])
 
