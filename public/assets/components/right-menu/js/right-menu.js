@@ -1,20 +1,60 @@
 $(document).ready(function () {
+	var count=0;
+	// $('.menu-editor').on('click', function (e) {
 
-	// $('#dismiss, .overlay').on('click', function () {
-	// 	$('#right-menu').removeClass('active');
-	// 	$('.overlay').fadeOut();
+		
 	// });
-
-	$('#sidebarCollapse').on('click', function () {
-		let width = window.getComputedStyle(document.getElementById("right-menu")).width;
-		console.log(width);
-
-		if (window.getComputedStyle(document.getElementById("right-menu")).right === "0px") {
-			document.getElementById("right-menu").style.right = "-" + width;
-		} else {
-			document.getElementById("right-menu").style.right = "0px";
+	$('.menu-side').on('click', function (e) {
+		let menu=e.target.getAttribute('data-menu');
+		switch (menu) {
+			case "h1":
+				headerHTML("font-header-1");
+				break;
+			case "h2":
+				headerHTML("font-header-2");
+				break;
+			case "h3":
+				headerHTML("font-header-3");
+				break;
+			case "bold":
+				fontStyle("bold");
+				break;
+			case "italic":
+				fontStyle("italic");
+				break;
+			case "underline":
+				fontStyle("underline");
+				break;
+			case "align-left":
+				textStyle("left");
+				break;
+			case "align-center":
+				textStyle("center");
+				break;
+			case "align-right":
+				textStyle("right");
+				break;
+			case "align-justify":
+				textStyle("justify");
+				break;
+			case "subscript":
+				textStyle("subscript");
+				break;
+			case "superscript":
+				textStyle("superscript");
+			case "indent":
+				inOutdent("indent");
+				break;
+			case "outdent":
+				inOutdent("outdent");
+				break;
+			case "color":
+				color(e.target.getAttribute('data-color'));
+				break;
+			default:
+				break;
 		}
-		// console.log(window.getComputedStyle(document.getElementById("right-menu")).right);
-
 	});
+
+
 });

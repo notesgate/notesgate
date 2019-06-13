@@ -1,34 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="loading" lang="en" data-textdirection="ltr">
 
 <head>
-	<meta charset="UTF-8" />
-	<title>Hello NotesGate</title>
-	{{ style('assets/theme/css/bootstrap.css') }}
-	{{ style('assets/global/css/app.css') }}
-	{{ style('assets/global/css/component.css') }}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description"
+        content="Chameleon Admin is a modern Bootstrap 4 webapp &amp; admin dashboard html template with a large number of components, elegant design, clean and organized code.">
+    <meta name="keywords"
+        content="admin template, Chameleon admin template, dashboard template, gradient admin template, responsive admin template, webapp, eCommerce dashboard, analytic dashboard">
+    <meta name="author" content="ThemeSelect">
+    <title>NotesGate</title>
+    <link rel="apple-touch-icon" href="theme-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="theme-assets/images/ico/favicon.ico">
 
+    <link
+        href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700"
+        rel="stylesheet">
+    <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
+    {{ style('assets/theme/css/bootstrap.css')}}
 
-	{{ style('assets/components/leftbar/css/style-app.css') }}
-	{{ style('assets/components/searchbar/css/searchbar.css') }}
-	{{ style('assets/global/css/media.css') }}
-	{{--  {{ style('assets/theme/css/fa-icon/all.css') }}  --}}
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    {{ style('assets/theme/chameleon/theme-assets/css/vendors.css')}}
+    {{ style('assets/theme/chameleon/theme-assets/vendors/css/charts/chartist.css')}}
+    {{ style('assets/theme/chameleon/theme-assets/css/app-lite.css')}}
+    {{ style('assets/theme/chameleon/theme-assets/css/core/menu/menu-types/vertical-menu.css')}}
+    {{ style('assets/theme/chameleon/theme-assets/css/core/colors/palette-gradient.css')}}
+    {{ style('assets/theme/chameleon/theme-assets/css/pages/dashboard-ecommerce.css')}}
 
-	@!section('style')
+    {{ style('assets/global/css/app.css')}}
+    {{ style('assets/global/css/media.css')}}
+    {{ style('assets/components/leftbar/css/leftbar.css')}}
+
+    @!section('style')
+    <script>
+        const IMAGE_URL="{{assetsUrl('images')}}";
+    </script>
 </head>
 
-<body>
-	<div id=web-content class="wrapper">
-		@include('layout._leftbar')
-		@!section('content')
-	</div>
+<body class="vertical-layout vertical-menu 2-columns menu-expanded" data-open="click" data-menu="vertical-menu"
+data-pos="{{notes.pos}}" data-color="bg-chartbg" data-col="2-columns" background="{{assetsUrl('notes/boards/'+image)}}">
 
-	{{ script('assets/theme/js/jquery-3.js') }}
-	{{ script('assets/theme/js/bootstrap.js') }}
-	{{ script('assets/global/js/app.js') }}
 
-	@!section('script')
+    @include('layout._leftbar')
+    @!section('content')
+    
+    {{ script('assets/theme/chameleon/theme-assets/vendors/js/vendors.min.js') }}
+    {{ script('assets/theme/chameleon/theme-assets/js/core/app-menu-lite.js') }}
+    {{ script('assets/theme/chameleon/theme-assets/js/core/app-lite.js') }}
+    @!section('script')
 
 </body>
 

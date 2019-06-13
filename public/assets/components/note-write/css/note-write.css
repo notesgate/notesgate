@@ -1,14 +1,20 @@
 .float-button-save {
 	position: fixed;
 	bottom: 40px;
+	right: 0px;
 }
-
+.float-right{
+	float: right;
+}
+.float-button-decs{
+	max-width: 163px;
+    top: 16%;
+    position: absolute;
+    right: 1px;
+}
 .show-menu {
-
 	position: relative;
-
 	display: flex;
-
 	right: 311%;
 }
 
@@ -18,7 +24,39 @@
 	height: 100%;
 	top: 0;
 }
+.section-image{
+	/* height: 400px; */
+	text-align: center;
+}
+
+.section-image img{
+    max-width: 95%;
+    max-height: 95%;
+}
 
 #buttonSave {
 	float: right;
+}
+
+.title-note{
+	font-size: 40px !important;
+}
+.text-note{
+	font-size: 25px !important;
+}
+
+
+#board-input{
+	border: none;
+	width: 200px;
+	height: 40px;
+}
+
+#board-add{
+	right: 0px;
+	padding: 0;
+	/* margin: 0; */
+	float: right;
+	width: 40px;
+	height: 40px;
 }
