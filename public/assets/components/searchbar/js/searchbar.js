@@ -14,3 +14,29 @@ window.onscroll = function () {
 
 }
 
+
+
+
+$(document).ready(function () {
+    
+	$("#searchbar").bind("keypress", {}, keypressInBox);
+
+	function keypressInBox(e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 13) { //Enter keycode     
+			if(document.getElementById('inSearchbar').value==="" || document.getElementById('inSearchbar').value.length==0){
+				return
+			}
+			// console.log('e.value :', );
+			let flag=document.querySelector('body').getAttribute('data-pos');
+			console.log('flag :', flag);
+			if(flag==="note"){
+				window.location.href = "/note/search/" +document.getElementById('inSearchbar').value;
+			}
+			if(flag==="board"){
+				window.location.href = "/board/search/" +document.getElementById('inSearchbar').value;
+			}
+		}
+	};
+	
+});
