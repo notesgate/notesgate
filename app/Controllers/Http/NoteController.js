@@ -10,10 +10,21 @@ class NoteController {
 		const note = await Note.all()
 		const data = note.toJSON();
 		// console.log("getnote", data);
-		data.write = "active"
+		for (const key in data) {
+			if (data.hasOwnProperty(key)) {
+				const element = data[key];
+					// data[0][key]=data[0][key].toJSON();
+				let result = data[key]['lable'].substring(1, data[key]['lable'].length-1)
+				data[key]['lable']=result.split(",")
+			}
+		}
+
+		data.write = "nav-item"
 		data.board = "nav-item"
 		data.trash = "nav-item"
+		data.pos="note"
 		data.setting = "nav-item"
+		console.log('data :', data);
 		return view.render('user.home', {
 			notes: data , search:"Search Note"
 		});
@@ -27,6 +38,35 @@ class NoteController {
 
 		return view.render('user.home', {
 			'note': 's'
+		});
+	}
+	async search({
+		auth,
+		params,
+		view
+	}) {
+		let re= '/'+params.key+'/';
+		const mongoClient = await Database.connect()
+		const data=await mongoClient.collection('notes').find({"title":  {"$regex": params.key, "$options": "i"}}).toArray()
+		console.log('data :', data);
+		// console.log("getnote", note);
+
+		for (const key in data) {
+			if (data.hasOwnProperty(key)) {
+				const element = data[key];
+					// data[0][key]=data[0][key].toJSON();
+				let result = data[key]['lable'].substring(1, data[key]['lable'].length-1)
+				data[key]['lable']=result.split(",")
+			}
+		}
+
+		data.write = "active"
+		data.board = "nav-item"
+		data.trash = "nav-item"
+		data.pos="note"
+		data.setting = "nav-item"
+		return view.render('user.home', {
+			notes: data , search:"Search Note"
 		});
 	}
 
@@ -53,6 +93,13 @@ class NoteController {
 			data[0].own = "true"
 		}
 		console.log('send :', data[0].section)
+
+		data.write = "active"
+		data.board = "nav-item"
+		data.trash = "nav-item"
+		data.pos="note"
+		data.setting = "nav-item"
+
 		return view.render('user.note', {
 			note: data
 		});
@@ -156,12 +203,23 @@ class NoteController {
 			});
 			data[0].lable = data[0].lable.substr(1, data[0].lable.length - 2).split(',')
 			console.log('data ss :', data[0].section);
+			data.write = "active"
+			data.board = "nav-item"
+			data.trash = "nav-item"
+			data.pos="note"
+			data.setting = "nav-item"
 			return view.render('user.write', {
 				note: data
 			});
 		} else {
-
+			let data={};
+			data.write = "active"
+			data.board = "nav-item"
+			data.trash = "nav-item"
+			data.pos="note"
+			data.setting = "nav-item"
 			return view.render('user.write', {
+				notes:data,
 				'note': 'pyramid.png'
 			});
 		}

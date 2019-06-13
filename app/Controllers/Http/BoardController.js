@@ -45,11 +45,29 @@ class BoardController {
 		data.write="nav-item"
 		data.board="active"
 		data.trash="nav-item"
+		data.pos="board"
 		data.setting="nav-item"
 	
-		return view.render('user.board', { boards: data,search:"Search Board"});
+		return view.render('user.board', { notes:data,boards: data,search:"Search Board"});
 	}
+	async search({
+		auth,
+		params,
+		view
+	}) {
+		let re= '/'+params.key+'/';
+		const mongoClient = await Database.connect()
+		const data=await mongoClient.collection('boards').find({"board":  {"$regex": params.key, "$options": "i"}}).toArray()
+		console.log('data :', data);
+		// console.log("getnote", note);
 
+		data.write = "active"
+		data.board = "nav-item"
+		data.trash = "nav-item"
+		data.pos="board"
+		data.setting = "nav-item"
+		return view.render('user.board', { notes:data,boards: data,search:"Search Board"});
+	}
 	async open({
 		auth,
 		view,
@@ -80,6 +98,7 @@ class BoardController {
 		data.write = "active"
 		data.board = "nav-item"
 		data.trash = "nav-item"
+		data.pos="board"
 		data.setting = "nav-item"
 		data.idBoard=data_board[0]._id;
 		return view.render('user.notes', { notes: data ,search:"Search "+data_board[0].board,image:data_board[0].image});
