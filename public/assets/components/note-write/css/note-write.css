@@ -1,10 +1,16 @@
 .float-button-save {
 	position: fixed;
 	bottom: 40px;
-	right: 28px;
+	right: 0px;
 }
 .float-right{
 	float: right;
+}
+.float-button-decs{
+	max-width: 163px;
+    top: 16%;
+    position: absolute;
+    right: 1px;
 }
 .show-menu {
 	position: relative;
@@ -37,4 +43,20 @@
 }
 .text-note{
 	font-size: 25px !important;
+}
+
+
+#board-input{
+	border: none;
+	width: 200px;
+	height: 40px;
+}
+
+#board-add{
+	right: 0px;
+	padding: 0;
+	/* margin: 0; */
+	float: right;
+	width: 40px;
+	height: 40px;
 }
