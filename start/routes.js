@@ -18,8 +18,6 @@ const Route = use('Route')
 const Helpers = use('Helpers')
 
 Route.get('/', 'NoteController.all').as('notesGate').middleware(['user'])
-Route.get('/board', 'BoardController.getAllBoard').as('board').middleware(['user'])
-Route.get('/write', 'NoteController.writeNote').as('write').middleware(['user'])
 
 Route.group(() => {
 	Route.get('/write/:note', 'NoteController.write')
@@ -32,6 +30,13 @@ Route.group(() => {
 	Route.post('/save', 'NoteController.save')
 	Route.post('/upload', 'NoteController.upload')
 }).prefix('/note').middleware(['user'])
+
+Route.group(() => {
+	Route.get('/', 'BoardController.all')
+	Route.post('/add', 'BoardController.add')
+	Route.get('/open/:board', 'BoardController.open')
+	Route.post('/upload/:id', 'BoardController.upload')
+}).prefix('/board').middleware(['user'])
 
 Route.group(() => {
 	Route.get('/', 'LoginController.index')
