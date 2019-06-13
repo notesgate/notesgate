@@ -1,0 +1,10 @@
+.float-button-change{
+    float: right !important;
+    position: relative;
+    right: 100px;
+    margin-top: -150px;
+}
+
+#imageBoard{
+    position: fixed;
+}
