@@ -12,7 +12,7 @@ class TestController {
 			password
 		} = request.only(['name', 'email', 'password']);
 
-		let data = { 'name': "aksana", 'email': "muammar.clasci@gmail.com", 'password': "kode-48MZA" };
+		let data = { 'name': "", 'email': "", 'password': "" };
 		const user = await User.create({
 			data
 		});
